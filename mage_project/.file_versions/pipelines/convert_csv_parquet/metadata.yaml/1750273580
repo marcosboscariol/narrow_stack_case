@@ -25,7 +25,7 @@ blocks:
   language: python
   name: validate_and_save_as_parquet
   retry_config: null
-  status: executed
+  status: failed
   timeout: null
   type: transformer
   upstream_blocks:
