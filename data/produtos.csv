@@ -1,0 +1,11 @@
+id_produto,nome_produto,categoria,preco
+101,Smartphone Modelo X,Eletrônicos,1999.90
+102,Notebook Pro,Eletrônicos,4550.00
+103,Fone de Ouvido Bluetooth,Eletrônicos,249.50
+104,Camiseta Básica Branca,Roupas,49.90
+105,Calça Jeans,Roupas,119.90
+106,Tênis de Corrida,Roupas,299.00
+107,Livro "A Arte da Programação",Livros,79.90
+108,Livro "SQL para Iniciantes",Livros,59.90
+109,Cadeira de Escritório,Móveis,450.00
+110,Mesa de Jantar,Móveis,899.90

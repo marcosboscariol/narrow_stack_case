@@ -1,0 +1,11 @@
+id_cliente,nome,email,cidade,estado
+1,João Silva,joao.silva@example.com,São Paulo,SP
+2,Maria Oliveira,maria.oliveira@example.com,Rio de Janeiro,RJ
+3,Carlos Pereira,carlos.pereira@example.com,Belo Horizonte,MG
+4,Ana Costa,ana.costa@example.com,Salvador,BA
+5,Pedro Martins,pedro.martins@example.com,Porto Alegre,RS
+6,Sofia Ferreira,sofia.ferreira@example.com,Curitiba,PR
+7,Lucas Souza,lucas.souza@example.com,São Paulo,SP
+8,Beatriz Santos,beatriz.santos@example.com,Recife,PE
+9,Gabriel Lima,gabriel.lima@example.com,Belo Horizonte,MG
+10,Laura Almeida,laura.almeida@example.com,Rio de Janeiro,RJ

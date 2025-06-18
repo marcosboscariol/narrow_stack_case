@@ -1,0 +1,8 @@
+At NarrowStack, our client, we work a lot with files, mainly Excel and CSV.
+I would like you to build a docker compose file/dockerfile with the service MageAI. 
+This container will be reproduced in another machine, so be sure it works properly.
+In MageAI, write one pipeline that opens the four files in this folder and save them as parquet files.
+Everything you do beyond this will be considered as a plus (e.g. save in another service like MinIO, set up a data transformation tool, etc).
+
+You can use LLMs to help you.
+You have two days to do this and send me the results (you can send me before this time).
