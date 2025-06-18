@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  mageai:
+    build: .
+    ports:
+      - "6789:6789"
+    volumes:
+      - ./mage_project:/home/src/mage_project
+      - ./data:/home/src/data
+    environment:
+      - ENV=dev
