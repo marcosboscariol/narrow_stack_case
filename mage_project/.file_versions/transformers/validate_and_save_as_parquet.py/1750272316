@@ -1,0 +1,40 @@
+import os
+from pathlib import Path
+import pandas as pd
+import json
+
+if 'transformer' not in globals():
+    from mage_ai.data_preparation.decorators import transformer
+if 'test' not in globals():
+    from mage_ai.data_preparation.decorators import test
+
+@transformer
+def transform(data: dict, *args, **kwargs):
+    parquet_path = Path('data/parquet')
+    parquet_path.mkdir(parents=True, exist_ok=True)
+
+    quality_log = []
+
+    for nome_df, df in data.items():
+        try:
+            df.to_parquet(parquet_path / f'{nome_df}.parquet', index=False)
+            quality_log.append({
+                'arquivo': f'{nome_df}.csv',
+                'status': 'ok'
+            })
+        except Exception as e:
+            quality_log.append({
+                'arquivo': f'{nome_df}.csv',
+                'status': 'erro',
+                'erro': str(e)
+            })
+
+    # Salva o log (mesmo que só com sucesso ou erros simples)
+    with open('data/quality_log.json', 'w', encoding='utf-8') as f:
+        json.dump(quality_log, f, indent=2, ensure_ascii=False)
+
+    return f'{len(quality_log)} files was processed.'
+
+@test
+def test_output(output, *args) -> None:
+    assert output is not None, 'O output está vazio'

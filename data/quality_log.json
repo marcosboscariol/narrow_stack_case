@@ -1,0 +1,18 @@
+[
+  {
+    "arquivo": "clientes.csv",
+    "status": "ok"
+  },
+  {
+    "arquivo": "itens_vendas.csv",
+    "status": "ok"
+  },
+  {
+    "arquivo": "produtos.csv",
+    "status": "ok"
+  },
+  {
+    "arquivo": "vendas.csv",
+    "status": "ok"
+  }
+]

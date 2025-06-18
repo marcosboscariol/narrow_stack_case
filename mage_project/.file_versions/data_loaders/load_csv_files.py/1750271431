@@ -1,0 +1,19 @@
+import pandas as pd
+from mage_ai.data_preparation.decorators import data_loader
+from mage_ai.data_preparation.shared.secrets import get_secret_value
+
+@data_loader
+def load_data(*args, **kwargs):
+    base_path = 'data/'
+
+    df_clientes = pd.read_csv(f'{base_path}clientes.csv')
+    df_itens_vendas = pd.read_csv(f'{base_path}itens_vendas.csv')
+    df_produtos = pd.read_csv(f'{base_path}produtos.csv')
+    df_vendas = pd.read_csv(f'{base_path}vendas.csv')
+
+    return {
+        'clientes': df_clientes,
+        'itens_vendas': df_itens_vendas,
+        'produtos': df_produtos,
+        'vendas': df_vendas
+    }

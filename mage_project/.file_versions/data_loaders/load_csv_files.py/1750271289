@@ -1,0 +1,23 @@
+import pandas as pd
+import os
+
+def load_data(*args, **kwargs):
+    files = [
+        "data/file1.csv",
+        "data/file2.csv",
+        "data/file3.xlsx",
+        "data/file4.xlsx"
+    ]
+
+    dfs = []
+    for file in files:
+        if file.endswith(".csv"):
+            df = pd.read_csv(file)
+        elif file.endswith(".xlsx"):
+            df = pd.read_excel(file)
+        else:
+            continue
+        dfs.append((file, df))
+    
+    return dfs
+

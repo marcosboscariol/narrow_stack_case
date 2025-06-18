@@ -1,0 +1,75 @@
+import os
+from pathlib import Path
+import pandas as pd
+from pydantic import BaseModel, ValidationError, validator
+from typing import Optional, List
+import json
+from datetime import datetime
+
+if 'transformer' not in globals():
+    from mage_ai.data_preparation.decorators import transformer
+if 'test' not in globals():
+    from mage_ai.data_preparation.decorators import test
+
+# Defina aqui seus modelos Pydantic conforme o schema esperado
+class ClienteModel(BaseModel):
+    id: int
+    nome: str
+    email: Optional[str]
+    data_cadastro: Optional[datetime]
+
+    @validator('nome')
+    def nome_nao_vazio(cls, v):
+        if not v or not v.strip():
+            raise ValueError('nome está vazio')
+        return v
+
+def validar_dataframe(df: pd.DataFrame, modelo: BaseModel) -> List[str]:
+    erros = []
+    for i, row in df.iterrows():
+        try:
+            modelo(**row.to_dict())
+        except ValidationError as e:
+            erros.append(f"Linha {i}: {e.errors()}")
+    return erros
+
+@transformer
+def transform(data: dict, *args, **kwargs):
+    parquet_path = Path('data/parquet')
+    parquet_path.mkdir(parents=True, exist_ok=True)
+
+    quality_log = []
+
+    for nome_df, df in data.items():
+        if nome_df == 'clientes':
+            modelo = ClienteModel
+        else:
+            modelo = None  # Sem validação para os demais por enquanto
+
+        erros = validar_dataframe(df, modelo) if modelo else []
+
+        if erros:
+            quality_log.append({
+                'arquivo': f'{nome_df}.csv',
+                'status': 'erro',
+                'erros': erros
+            })
+            continue
+
+        # Salva Parquet
+        df.to_parquet(parquet_path / f'{nome_df}.parquet', index=False)
+
+        quality_log.append({
+            'arquivo': f'{nome_df}.csv',
+            'status': 'ok'
+        })
+
+    # Salva log de qualidade
+    with open('data/quality_log.json', 'w', encoding='utf-8') as f:
+        json.dump(quality_log, f, indent=2, ensure_ascii=False)
+
+    return f'{len(quality_log)} arquivos processados. Veja data/quality_log.json'
+
+@test
+def test_output(output, *args) -> None:
+    assert output is not None, 'O output está vazio'
