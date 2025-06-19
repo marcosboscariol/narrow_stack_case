@@ -14,7 +14,8 @@ SELECT
     i.quantidade,
     i.preco_unitario,
     v.id_cliente,
-    v.data_venda
+    CAST(v.data_venda AS date) AS data_venda,
+    i.quantidade * i.preco_unitario AS preco_total_item
 FROM
     itens_vendas i
 LEFT JOIN
