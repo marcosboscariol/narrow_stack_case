@@ -62,4 +62,4 @@ def transform(data, *args, **kwargs):
 
 @test
 def test_output(output=None, *args) -> None:
-    assert output is None, 'Expected None since the block only performs loading.'
+    assert output is None, 'Esperava None pois o bloco apenas executa carga'

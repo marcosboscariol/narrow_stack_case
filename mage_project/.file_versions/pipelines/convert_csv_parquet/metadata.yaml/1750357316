@@ -26,13 +26,13 @@ blocks:
   language: python
   name: validate_and_save_as_parquet
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: transformer
   upstream_blocks:
   - load_csv_files
   uuid: validate_and_save_as_parquet
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration: {}
   downstream_blocks:
@@ -43,7 +43,7 @@ blocks:
   language: python
   name: load_parquet_to_postgres
   retry_config: null
-  status: updated
+  status: failed
   timeout: null
   type: transformer
   upstream_blocks:

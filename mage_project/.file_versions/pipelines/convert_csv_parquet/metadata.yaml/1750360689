@@ -26,13 +26,13 @@ blocks:
   language: python
   name: validate_and_save_as_parquet
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: transformer
   upstream_blocks:
   - load_csv_files
   uuid: validate_and_save_as_parquet
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration: {}
   downstream_blocks:
@@ -43,13 +43,13 @@ blocks:
   language: python
   name: load_parquet_to_postgres
   retry_config: null
-  status: updated
+  status: executed
   timeout: null
   type: transformer
   upstream_blocks:
   - validate_and_save_as_parquet
   uuid: load_parquet_to_postgres
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     dbt:
@@ -100,7 +100,7 @@ type: python
 uuid: convert_csv_parquet
 variables_dir: /home/src/mage_data/mage_project
 widgets:
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     buckets: 10
@@ -119,7 +119,7 @@ widgets:
   upstream_blocks:
   - dbt_build
   uuid: dbt_build_histogram_w1
-- all_upstream_blocks_executed: false
+- all_upstream_blocks_executed: true
   color: null
   configuration:
     chart_type: table

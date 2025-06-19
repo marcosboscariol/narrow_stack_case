@@ -47,7 +47,7 @@ def transform(data, *args, **kwargs):
         df = pd.read_parquet(path_s3, storage_options=storage_options)
 
         tabela = arquivo.replace('.parquet', '')
-        print(f"Inserting data on table {tabela} ...")
+        print(f"Inserindo dados na tabela {tabela} ...")
 
         with engine.begin() as conn:
             try:
@@ -57,9 +57,9 @@ def transform(data, *args, **kwargs):
 
         df.to_sql(tabela, engine, if_exists='append', index=False)
 
-    print("Load completed successfully.")
+    print("Carga finalizada com sucesso.")
     return None
 
 @test
 def test_output(output=None, *args) -> None:
-    assert output is None, 'Expected None since the block only performs loading.'
+    assert output is None, 'Esperava None pois o bloco apenas executa carga'
