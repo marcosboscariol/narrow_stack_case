@@ -3,9 +3,8 @@
 ## How to Run the Project
 <details>
 
-<summary>Content</summary>
-
-
+<summary>Content</summary>  
+<br>
 This project implements a complete data pipeline using the following tools:
 
 - **CSV ingestion**: Imports CSV files and stores them as Parquet files in **MinIO**.
@@ -148,7 +147,7 @@ In this project, Mage AI is responsible for:
 
 You can interact with Mage AI through its web interface to trigger pipelines manually or set up automated schedules.
 
-![MageAI example](assets/images/mageai.png)
+![MageAI example](assets/images/mageai.jpg)
 
 ### dbt
 
@@ -162,7 +161,7 @@ dbt (data build tool) is used to transform raw data in your database into clean,
 
 In this project, the final data modeling is implemented and delivered using dbt.
 
-![Project Data Modeling](assets/images/dimension.png)
+![Project Data Modeling](assets/images/dimension.jpg)
 
 
 ### Metabase
@@ -171,6 +170,6 @@ In this project, the final data modeling is implemented and delivered using dbt.
 - You can use it to build interactive dashboards and generate reports based on the transformed data.
 - Feel free to explore and customize your analytics experience as needed.
 
-![Sample dashboard with key metrics and visuals from the project data in Metabase.](assets/images/metabase.png)
+![Sample dashboard with key metrics and visuals from the project data in Metabase.](assets/images/metabase.jpg)
 
 </details>
