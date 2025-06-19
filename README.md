@@ -23,14 +23,13 @@ Follow these steps to run the complete data stack using Docker.
 Ensure the following tools are installed:
 
 - [Docker](https://docs.docker.com/get-docker/)
-- [Docker Compose](https://docs.docker.com/compose/)
 
 ### 2. Project Structure
 
 First, clone this repository:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://https://github.com/marcosboscariol/narrow_stack_case
 cd your-repo-name
 ```
 
