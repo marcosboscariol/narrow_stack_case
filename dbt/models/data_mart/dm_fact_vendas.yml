@@ -1,0 +1,45 @@
+version: 2
+
+models:
+  - name: fato_vendas_itens
+    description: "Fact table containing individual items sold in each transaction, including product, customer, and unit price information."
+    columns:
+      - name: id_venda
+        description: "Primary key of the sale transaction"
+        tests:
+          - not_null
+
+      - name: id_produto
+        description: "Foreign key to the product dimension"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dm_dim_produtos')
+              field: id_produto
+
+      - name: quantidade
+        description: "Number of product units sold"
+        tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: ">= 0"
+
+      - name: preco_unitario
+        description: "Unit price of the product sold"
+        tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: ">= 0"
+
+      - name: id_cliente
+        description: "Foreign key to the customer dimension"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dm_dim_cliente')
+              field: id_cliente
+
+      - name: data_venda
+        description: "Date the sale occurred"
+        tests:
+          - not_null
