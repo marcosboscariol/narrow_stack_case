@@ -35,8 +35,7 @@ blocks:
 - all_upstream_blocks_executed: true
   color: null
   configuration: {}
-  downstream_blocks:
-  - dbt_build
+  downstream_blocks: []
   executor_config: null
   executor_type: local_python
   has_callback: false
@@ -49,33 +48,49 @@ blocks:
   upstream_blocks:
   - validate_and_save_as_parquet
   uuid: load_parquet_to_postgres
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
-    dbt:
-      command: build
-    dbt_profile_target: ''
     dbt_project_name: dbt_narrowstack
-    disable_query_preprocessing: false
-    export_write_policy: append
+    file_path: dbt_narrowstack/models/data_mart/dm_dim_cliente.sql
     file_source:
-      path: dbts/dbt_build.yaml
-    use_raw_sql: false
-  downstream_blocks:
-  - dbt_build_histogram_w1
-  - dbt_build_table_j0
+      path: dbt_narrowstack/models/data_mart/dm_dim_cliente.sql
+      project_path: dbt_narrowstack
+    limit: 1000
+  downstream_blocks: []
   executor_config: null
   executor_type: local_python
   has_callback: false
-  language: yaml
-  name: dbt_build
+  language: sql
+  name: dbt_narrowstack/models/data_mart/dm_dim_cliente
   retry_config: null
-  status: executed
+  status: not_executed
   timeout: null
   type: dbt
   upstream_blocks:
-  - load_parquet_to_postgres
-  uuid: dbt_build
+  - dbt_narrowstack/models/staging/stg_clientes
+  uuid: dbt_narrowstack/models/data_mart/dm_dim_cliente
+- all_upstream_blocks_executed: true
+  color: null
+  configuration:
+    dbt_project_name: dbt_narrowstack
+    file_path: dbt_narrowstack/models/staging/stg_clientes.sql
+    file_source:
+      path: dbt_narrowstack/models/staging/stg_clientes.sql
+      project_path: dbt_narrowstack
+  downstream_blocks:
+  - dbt_narrowstack/models/data_mart/dm_dim_cliente
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: sql
+  name: dbt_narrowstack/models/staging/stg_clientes
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: dbt
+  upstream_blocks: []
+  uuid: dbt_narrowstack/models/staging/stg_clientes
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
@@ -99,43 +114,4 @@ tags: []
 type: python
 uuid: convert_csv_parquet
 variables_dir: /home/src/mage_data/mage_project
-widgets:
-- all_upstream_blocks_executed: true
-  color: null
-  configuration:
-    buckets: 10
-    chart_type: histogram
-    x: x
-  downstream_blocks: []
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: yaml
-  name: dbt_build_histogram_w1
-  retry_config: null
-  status: failed
-  timeout: null
-  type: chart
-  upstream_blocks:
-  - dbt_build
-  uuid: dbt_build_histogram_w1
-- all_upstream_blocks_executed: true
-  color: null
-  configuration:
-    chart_type: table
-    limit: 10
-    x: x
-    y: y
-  downstream_blocks: []
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: yaml
-  name: dbt_build_table_j0
-  retry_config: null
-  status: updated
-  timeout: null
-  type: chart
-  upstream_blocks:
-  - dbt_build
-  uuid: dbt_build_table_j0
+widgets: []

@@ -1,0 +1,1 @@
+dbt build --project-dir /home/src/dbt --profiles-dir /home/src/dbt

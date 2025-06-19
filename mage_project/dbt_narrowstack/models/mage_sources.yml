@@ -1,0 +1,14 @@
+sources:
+- description: Dataframes Mage upstream blocks
+  loader: mage
+  name: mage_dbt_narrowstack
+  schema: public
+  tables:
+  - description: Dataframe for block `load_parquet_to_postgres` of the `convert_csv_parquet`
+      mage pipeline.
+    identifier: mage_convert_csv_parquet_load_parquet_to_postgres
+    meta:
+      block_uuid: load_parquet_to_postgres
+      pipeline_uuid: convert_csv_parquet
+    name: convert_csv_parquet_load_parquet_to_postgres
+version: 2

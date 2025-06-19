@@ -53,7 +53,7 @@ blocks:
   color: null
   configuration:
     dbt:
-      command: build
+      command: run
     dbt_profile_target: ''
     dbt_project_name: dbt_narrowstack
     disable_query_preprocessing: false
@@ -116,8 +116,7 @@ widgets:
   status: failed
   timeout: null
   type: chart
-  upstream_blocks:
-  - dbt_build
+  upstream_blocks: []
   uuid: dbt_build_histogram_w1
 - all_upstream_blocks_executed: true
   color: null

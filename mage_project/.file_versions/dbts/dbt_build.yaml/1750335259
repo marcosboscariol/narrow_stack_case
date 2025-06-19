@@ -1,0 +1,1 @@
+dbt build --select "dbt_narrowstack"

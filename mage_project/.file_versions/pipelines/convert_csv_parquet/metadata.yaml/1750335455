@@ -53,7 +53,7 @@ blocks:
   color: null
   configuration:
     dbt:
-      command: build
+      command: run
     dbt_profile_target: ''
     dbt_project_name: dbt_narrowstack
     disable_query_preprocessing: false
@@ -63,14 +63,13 @@ blocks:
     use_raw_sql: false
   downstream_blocks:
   - dbt_build_histogram_w1
-  - dbt_build_table_j0
   executor_config: null
   executor_type: local_python
   has_callback: false
   language: yaml
   name: dbt_build
   retry_config: null
-  status: executed
+  status: updated
   timeout: null
   type: dbt
   upstream_blocks:
@@ -100,7 +99,7 @@ type: python
 uuid: convert_csv_parquet
 variables_dir: /home/src/mage_data/mage_project
 widgets:
-- all_upstream_blocks_executed: true
+- all_upstream_blocks_executed: false
   color: null
   configuration:
     buckets: 10
@@ -113,29 +112,9 @@ widgets:
   language: yaml
   name: dbt_build_histogram_w1
   retry_config: null
-  status: failed
-  timeout: null
-  type: chart
-  upstream_blocks:
-  - dbt_build
-  uuid: dbt_build_histogram_w1
-- all_upstream_blocks_executed: true
-  color: null
-  configuration:
-    chart_type: table
-    limit: 10
-    x: x
-    y: y
-  downstream_blocks: []
-  executor_config: null
-  executor_type: local_python
-  has_callback: false
-  language: yaml
-  name: dbt_build_table_j0
-  retry_config: null
   status: updated
   timeout: null
   type: chart
   upstream_blocks:
   - dbt_build
-  uuid: dbt_build_table_j0
+  uuid: dbt_build_histogram_w1

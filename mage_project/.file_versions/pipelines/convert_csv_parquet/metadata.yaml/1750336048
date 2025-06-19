@@ -53,7 +53,7 @@ blocks:
   color: null
   configuration:
     dbt:
-      command: build
+      command: run
     dbt_profile_target: ''
     dbt_project_name: dbt_narrowstack
     disable_query_preprocessing: false
