@@ -1,6 +1,10 @@
 #  Narrowstack Case - Data Pipeline with Mage, PostgreSQL, MinIO, dbt, and Metabase
 
-## 🔍 Overview
+## How to Run the Project
+<details>
+
+<summary>Content</summary>
+
 
 This project implements a complete data pipeline using the following tools:
 
@@ -15,14 +19,14 @@ This project implements a complete data pipeline using the following tools:
 
 Follow these steps to run the complete data stack using Docker.
 
-### 1. 🧱 Prerequisites
+### 1. Prerequisites
 
 Ensure the following tools are installed:
 
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose](https://docs.docker.com/compose/)
 
-### 2. 📁 Project Structure
+### 2. Project Structure
 
 First, clone this repository:
 
@@ -33,6 +37,7 @@ cd your-repo-name
 
 The project should have the following structure:
 
+```plaintext
 .
 ├── data/
 │   └── csv/
@@ -45,6 +50,7 @@ The project should have the following structure:
     └── dbt_narrowstack
 ├── docker-compose.yml
 ├── Dockerfile
+```
 
 ### 3. Running the Project with Docker
 
@@ -80,6 +86,8 @@ Inside Mage AI:
 - Choose the desired trigger to schedule the pipeline or run it manually by clicking the **Run** button.
 
 This pipeline will import the CSV files and convert them to Parquet format, storing them in MinIO.
+
+After, it will insert the parquet files into a postgres database and finally will build a dbt transformation process.
 
 ### Optional: Verify Parquet Files in MinIO
 
@@ -122,3 +130,47 @@ http://localhost:3001
 ```
 
 You can explore the data, create dashboards, and visualize your transformed datasets as you prefer.
+</details>
+
+## Overview of Key Tools
+<details>
+<summary>Content</summary>
+
+### Mage AI
+
+Mage AI is an open-source data pipeline tool that allows you to build, schedule, and monitor ETL pipelines with ease.  
+In this project, Mage AI is responsible for:
+- Importing raw CSV data,
+- Converting CSV files into Parquet format,
+- Uploading Parquet files to MinIO (an S3-compatible storage).
+- Upload the PArquer files from MinIO to Postgres
+- Build a dbt Transformation flow
+
+You can interact with Mage AI through its web interface to trigger pipelines manually or set up automated schedules.
+
+![MageAI example](assets/images/mageai.png)
+
+### dbt
+
+dbt (data build tool) is used to transform raw data in your database into clean, structured tables. It runs SQL queries to create tables and views for analytics.
+
+- In this project, dbt:
+- Builds staging (stg_) tables to clean raw data
+- Creates data marts (dm_) for reporting
+- Runs tests to check data quality
+- Manages transformations inside the Docker setup
+
+In this project, the final data modeling is implemented and delivered using dbt.
+
+![Project Data Modeling](assets/images/dimension.png)
+
+
+### Metabase
+
+- Metabase is the data visualization layer of the project. It connects directly to the Postgres database and lets you explore your data with dashboards, charts, and queries — no SQL required.
+- You can use it to build interactive dashboards and generate reports based on the transformed data.
+- Feel free to explore and customize your analytics experience as needed.
+
+![Sample dashboard with key metrics and visuals from the project data in Metabase.](assets/images/metabase.png)
+
+</details>
