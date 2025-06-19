@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: stg_vendas
+    description: "Staging table for vendas"
+    columns:
+      - name: id_venda
+        description: "Unique identifier of the sale"
+        tests:
+          - not_null
+      - name: id_cliente
+        description: "Identifier of the customer who made the sale"
+        tests:
+          - not_null
+      - name: data_venda
+        description: "Date when the sale was made"
+        tests:
+          - not_null
+      - name: valor_total
+        description: "Total value of the sale"
+        tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: ">= 0"

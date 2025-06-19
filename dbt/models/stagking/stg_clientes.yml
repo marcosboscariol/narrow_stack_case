@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: stg_clientes
+    description: "Staging table for clientes"
+    columns:
+      - name: id_cliente
+        description: "Client id"
+        tests:
+          - not_null
+          - unique
+      - name: nome
+        description: "Client name"
+        tests:
+          - not_null
+      - name: email
+        description: "Client email"
+        tests:
+          - not_null
+          - unique
+      - name: cidade
+        description: "Client city"
+        tests:
+          - not_null
+      - name: estado
+        description: "Client state"
+        tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: " IS NOT NULL AND char_length(estado) = 2"

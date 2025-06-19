@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: public
+    database: dbt
+    tables:
+      - name: clientes
+      - name: itens_vendas
+      - name: produtos
+      - name: vendas

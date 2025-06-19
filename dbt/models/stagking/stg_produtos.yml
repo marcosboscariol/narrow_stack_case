@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: stg_produtos
+    description: "Staging table for produtos"
+    columns:
+      - name: id_produto
+        description: "Unique identifier of the product"
+        tests:
+          - not_null
+          - unique
+      - name: nome_produto
+        description: "Name of the product"
+        tests:
+          - not_null
+      - name: categoria
+        description: "Category of the product"
+        tests:
+          - not_null
+      - name: preco
+        description: "Price of the product"
+        tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: ">= 0"

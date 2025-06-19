@@ -9,6 +9,8 @@ EXPOSE 6789
 
 RUN pip install pandas pyarrow s3fs boto3 sqlalchemy psycopg2-binary
 
+RUN dbt deps
+
 CMD ["mage", "start", "mage_project"]
 
 
