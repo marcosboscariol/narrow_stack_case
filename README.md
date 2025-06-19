@@ -7,10 +7,10 @@
 <br>
 This project implements a complete data pipeline using the following tools:
 
-- **CSV ingestion**: Imports CSV files and stores them as Parquet files in **MinIO**.
-- **Data loading**: Loads the Parquet files into a **PostgreSQL** database.
-- **Transformations**: Executes **dbt** models for data transformation.
-- **Analytics**: Serves dashboards and reports through **Metabase**.
+- **MageAI - CSV ingestion**: Imports CSV files and stores them as Parquet files in **MinIO**.
+- **MageAI - Data loading**: Loads the Parquet files into a **PostgreSQL** database.
+- **dbt - Transformations**: Executes **dbt** models for data transformation.
+- **Metabase - Analytics**: Serves dashboards and reports through **Metabase**.
 
 ---
 
