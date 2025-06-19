@@ -16,6 +16,43 @@ services:
       - S3_BUCKET=mage-bucket
     depends_on:
       - minio
+      - postgres
+
+  dbt:
+    image: ghcr.io/dbt-labs/dbt-postgres:1.7.9
+    container_name: dbt
+    volumes:
+      - ./dbt:/usr/app
+      - ./dbt/profiles.yml:/root/.dbt/profiles.yml
+    working_dir: /usr/app
+    depends_on:
+      - postgres
+    environment:
+      DBT_POSTGRES_HOST: postgres
+      DBT_POSTGRES_USER: postgres
+      DBT_POSTGRES_PASSWORD: postgres
+      DBT_POSTGRES_DB: dbt
+      DBT_POSTGRES_PORT: 5432
+
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: dbt
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  metabase:
+    image: metabase/metabase:latest
+    container_name: metabase
+    ports:
+      - "3001:3000"
+    volumes:
+      - metabase_data:/metabase-data
 
   minio:
     image: minio/minio
@@ -24,6 +61,7 @@ services:
       - "9000:9000"
       - "9001:9001"
     environment:
+      MINIO_ENDPOINT: http://minio:9000
       MINIO_ROOT_USER: minioadmin
       MINIO_ROOT_PASSWORD: minioadmin
     volumes:
@@ -31,4 +69,6 @@ services:
     command: server /data --console-address ":9001"
 
 volumes:
+  pgdata:
+  metabase_data:
   minio_data:

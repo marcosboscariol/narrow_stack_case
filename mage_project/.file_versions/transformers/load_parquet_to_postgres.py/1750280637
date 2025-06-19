@@ -1,0 +1,10 @@
+import pandas as pd
+
+df = pd.read_parquet(
+    's3://mage-bucket/parquet/clientes.parquet',
+    storage_options={
+        'key': 'minioadmin',
+        'secret': 'minioadmin',
+        'client_kwargs': {'endpoint_url': 'http://minio:9000'}
+    }
+)

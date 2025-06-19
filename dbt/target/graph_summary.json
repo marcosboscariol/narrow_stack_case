@@ -1,0 +1,1 @@
+{"_invocation_id": "5dbb8dae-b6b6-492a-aea6-ec98ead936dc", "linked": {"0": {"name": "model.mage_case.stg_produtos", "type": "model"}, "1": {"name": "model.mage_case.stg_clientes", "type": "model"}, "2": {"name": "model.mage_case.stg_itens_vendas", "type": "model"}, "3": {"name": "model.mage_case.stg_vendas", "type": "model"}}}

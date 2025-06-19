@@ -1,0 +1,114 @@
+[0m17:13:26.621515 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F2D1566D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F2CE05990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F2CE05F90>]}
+
+
+============================== 17:13:26.626836 | 18b38821-0277-4dfc-82b4-c2a22d052314 ==============================
+[0m17:13:26.626836 [info ] [MainThread]: Running with dbt=1.7.3
+[0m17:13:26.626836 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\marco\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:13:26.628343 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\marco\OneDrive\Documentos\narrow_stack_case\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:13:26.630267 [debug] [MainThread]: Command `dbt run` failed at 17:13:26.629348 after 0.07 seconds
+[0m17:13:26.630267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F2CE45410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F2D602110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015F25FA2AD0>]}
+[0m17:13:26.631365 [debug] [MainThread]: Flushing usage events
+[0m17:13:37.944425 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182A88468D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182A187B590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182A804EAD0>]}
+
+
+============================== 17:13:37.949536 | 0a62d927-8d3a-4d21-b675-deb6b6d3d17a ==============================
+[0m17:13:37.949536 [info ] [MainThread]: Running with dbt=1.7.3
+[0m17:13:37.949536 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\marco\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m17:13:37.951580 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\marco\OneDrive\Documentos\narrow_stack_case\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:13:37.951580 [debug] [MainThread]: Command `dbt run` failed at 17:13:37.951580 after 0.05 seconds
+[0m17:13:37.951580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182A8D0CE10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182A88454D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000182A88468D0>]}
+[0m17:13:37.954096 [debug] [MainThread]: Flushing usage events
+[0m17:14:43.133350 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029797D33550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029797D2B110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029797D30B10>]}
+
+
+============================== 17:14:43.136366 | 6da1d75e-7505-49e7-adb0-e978415b38e9 ==============================
+[0m17:14:43.136366 [info ] [MainThread]: Running with dbt=1.7.3
+[0m17:14:43.137870 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\marco\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:14:43.137870 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\marco\OneDrive\Documentos\narrow_stack_case\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m17:14:43.139267 [debug] [MainThread]: Command `dbt run` failed at 17:14:43.139267 after 0.05 seconds
+[0m17:14:43.139267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029797D32390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029797D56AD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029797D55B90>]}
+[0m17:14:43.141274 [debug] [MainThread]: Flushing usage events
+[0m17:16:58.851145 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002155E866E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002155E357C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002155E8664D0>]}
+
+
+============================== 17:16:58.854184 | 7b17f8de-b069-4a89-a910-6ca83d2dfdbb ==============================
+[0m17:16:58.854184 [info ] [MainThread]: Running with dbt=1.7.3
+[0m17:16:58.857753 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\marco\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\marco\\OneDrive\\Documentos\\narrow_stack_case\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:16:58.861290 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'postgres_profile'
+[0m17:16:58.861290 [debug] [MainThread]: Command `dbt run` failed at 17:16:58.861290 after 0.05 seconds
+[0m17:16:58.861290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002155B43CD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002155E893A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002155E842310>]}
+[0m17:16:58.861290 [debug] [MainThread]: Flushing usage events
+[0m17:25:46.095763 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B30061290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B30061610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B30063890>]}
+
+
+============================== 17:25:46.099246 | f016da75-88bf-41a0-a438-53e334e78efc ==============================
+[0m17:25:46.099246 [info ] [MainThread]: Running with dbt=1.7.3
+[0m17:25:46.099246 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\marco\\.dbt', 'log_path': 'C:\\Users\\marco\\OneDrive\\Documentos\\narrow_stack_case\\logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:25:46.104262 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'postgres_profile'
+[0m17:25:46.105267 [debug] [MainThread]: Command `dbt run` failed at 17:25:46.105267 after 0.05 seconds
+[0m17:25:46.105267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B3034F550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B3003D0D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025B30033E50>]}
+[0m17:25:46.106770 [debug] [MainThread]: Flushing usage events
+[0m17:26:04.687496 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C42351D850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C423371A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C4231E57D0>]}
+
+
+============================== 17:26:04.693847 | 16301bc2-e6e8-4dfd-8fe2-f83b7581a7fe ==============================
+[0m17:26:04.693847 [info ] [MainThread]: Running with dbt=1.7.3
+[0m17:26:04.693847 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\marco\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\marco\\OneDrive\\Documentos\\narrow_stack_case\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m17:26:04.697593 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'postgres_profile'
+[0m17:26:04.702066 [debug] [MainThread]: Command `dbt run` failed at 17:26:04.702066 after 0.07 seconds
+[0m17:26:04.703178 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C41FC33890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C423A2F450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C4239E2010>]}
+[0m17:26:04.703784 [debug] [MainThread]: Flushing usage events
+[0m17:26:11.810126 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A504C48350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A50481F450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A504476450>]}
+
+
+============================== 17:26:11.815856 | 8d2794fa-2dd7-4dd0-9954-f26cc980b716 ==============================
+[0m17:26:11.815856 [info ] [MainThread]: Running with dbt=1.7.3
+[0m17:26:11.816866 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\marco\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\marco\\OneDrive\\Documentos\\narrow_stack_case\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m17:26:11.819943 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'postgres_profile'
+[0m17:26:11.819943 [debug] [MainThread]: Command `dbt run` failed at 17:26:11.819943 after 0.06 seconds
+[0m17:26:11.819943 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A504476450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A504C21A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A504450E90>]}
+[0m17:26:11.822953 [debug] [MainThread]: Flushing usage events
+[0m17:26:25.983168 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A575B797D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A575B79F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A575709790>]}
+
+
+============================== 17:26:25.985083 | ee0fb07c-bbbc-4ea1-9f96-666a0cd9691c ==============================
+[0m17:26:25.985083 [info ] [MainThread]: Running with dbt=1.7.3
+[0m17:26:25.988094 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\marco\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\marco\\OneDrive\\Documentos\\narrow_stack_case\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m17:26:25.988094 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'postgres_profile'
+[0m17:26:25.991200 [debug] [MainThread]: Command `dbt run` failed at 17:26:25.991200 after 0.06 seconds
+[0m17:26:25.991200 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A5758A40D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A575B9F450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A575B50B90>]}
+[0m17:26:25.991200 [debug] [MainThread]: Flushing usage events
+[0m17:26:34.425589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205D3BA4090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205D3AD7390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205D4301FD0>]}
+
+
+============================== 17:26:34.430708 | 260cc5a8-70c8-4be8-85d9-6d6c8c640ee1 ==============================
+[0m17:26:34.430708 [info ] [MainThread]: Running with dbt=1.7.3
+[0m17:26:34.431750 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\marco\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\marco\\OneDrive\\Documentos\\narrow_stack_case\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m17:26:34.434793 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'postgres_profile'
+[0m17:26:34.436497 [debug] [MainThread]: Command `dbt run` failed at 17:26:34.436497 after 0.07 seconds
+[0m17:26:34.437517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205D3BB5390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205D42D2190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000205D43017D0>]}
+[0m17:26:34.438080 [debug] [MainThread]: Flushing usage events

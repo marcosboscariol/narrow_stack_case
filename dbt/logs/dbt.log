@@ -1,0 +1,1440 @@
+[0m20:46:18.815526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71bd26bcbdf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71bd273dce80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71bd2725d2d0>]}
+
+
+============================== 20:46:18.822984 | 28bfea9b-851e-469f-95d8-617f69ff3d72 ==============================
+[0m20:46:18.822984 [info ] [MainThread]: Running with dbt=1.7.9
+[0m20:46:18.824271 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/usr/app', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m20:46:18.825878 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /usr/app/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:46:18.827800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71bd26bcbdf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71bd2508ec50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71bd2508ece0>]}
+[0m20:46:18.828721 [debug] [MainThread]: Flushing usage events
+[0m20:46:43.627487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7535cf957310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7535ce47b100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7535cffe82b0>]}
+
+
+============================== 20:46:43.633447 | c3837fbc-9d8b-4dba-be0f-546cd31fcf29 ==============================
+[0m20:46:43.633447 [info ] [MainThread]: Running with dbt=1.7.9
+[0m20:46:43.634514 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/app', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/usr/app/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m20:46:43.828842 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c3837fbc-9d8b-4dba-be0f-546cd31fcf29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7535ce47b100>]}
+[0m20:46:43.914015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c3837fbc-9d8b-4dba-be0f-546cd31fcf29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7535cddce9e0>]}
+[0m20:46:43.915767 [info ] [MainThread]: Registered adapter: postgres=1.7.9
+[0m20:46:43.926079 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m20:46:43.930475 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m20:46:43.931596 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c3837fbc-9d8b-4dba-be0f-546cd31fcf29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7535cc456f20>]}
+[0m20:46:44.905690 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.mage_case.staging
+- models.mage_case.data_mart
+[0m20:46:44.914761 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'c3837fbc-9d8b-4dba-be0f-546cd31fcf29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7535cc26f910>]}
+[0m20:46:44.948726 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'c3837fbc-9d8b-4dba-be0f-546cd31fcf29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7535cc33cdf0>]}
+[0m20:46:44.950455 [info ] [MainThread]: Found 4 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m20:46:44.951904 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c3837fbc-9d8b-4dba-be0f-546cd31fcf29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7535cc3f53f0>]}
+[0m20:46:44.955664 [info ] [MainThread]: 
+[0m20:46:44.957715 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m20:46:44.961469 [debug] [ThreadPool]: Acquiring new postgres connection 'list_dbt'
+[0m20:46:44.973374 [debug] [ThreadPool]: Using postgres connection "list_dbt"
+[0m20:46:44.974695 [debug] [ThreadPool]: On list_dbt: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "connection_name": "list_dbt"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m20:46:44.975821 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:46:45.007924 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.0 seconds
+[0m20:46:45.009969 [debug] [ThreadPool]: On list_dbt: Close
+[0m20:46:45.012371 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt, now list_dbt_public)
+[0m20:46:45.018448 [debug] [ThreadPool]: Using postgres connection "list_dbt_public"
+[0m20:46:45.019283 [debug] [ThreadPool]: On list_dbt_public: BEGIN
+[0m20:46:45.020084 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:46:45.028307 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m20:46:45.029278 [debug] [ThreadPool]: Using postgres connection "list_dbt_public"
+[0m20:46:45.030031 [debug] [ThreadPool]: On list_dbt_public: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "connection_name": "list_dbt_public"} */
+select
+      'dbt' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'dbt' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'dbt' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m20:46:45.037961 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m20:46:45.039727 [debug] [ThreadPool]: On list_dbt_public: ROLLBACK
+[0m20:46:45.040711 [debug] [ThreadPool]: On list_dbt_public: Close
+[0m20:46:45.045781 [debug] [MainThread]: Using postgres connection "master"
+[0m20:46:45.046718 [debug] [MainThread]: On master: BEGIN
+[0m20:46:45.047423 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:46:45.056579 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m20:46:45.057642 [debug] [MainThread]: Using postgres connection "master"
+[0m20:46:45.058854 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m20:46:45.064694 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m20:46:45.066681 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'c3837fbc-9d8b-4dba-be0f-546cd31fcf29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7535cb09e230>]}
+[0m20:46:45.067704 [debug] [MainThread]: On master: ROLLBACK
+[0m20:46:45.068615 [debug] [MainThread]: Using postgres connection "master"
+[0m20:46:45.069321 [debug] [MainThread]: On master: BEGIN
+[0m20:46:45.070521 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m20:46:45.071458 [debug] [MainThread]: On master: COMMIT
+[0m20:46:45.072484 [debug] [MainThread]: Using postgres connection "master"
+[0m20:46:45.073548 [debug] [MainThread]: On master: COMMIT
+[0m20:46:45.074710 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m20:46:45.075551 [debug] [MainThread]: On master: Close
+[0m20:46:45.076986 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:46:45.078112 [info ] [MainThread]: 
+[0m20:46:45.089361 [debug] [Thread-1 (]: Began running node model.mage_case.stg_clientes
+[0m20:46:45.089995 [debug] [Thread-2 (]: Began running node model.mage_case.stg_itens_vendas
+[0m20:46:45.090452 [debug] [Thread-3 (]: Began running node model.mage_case.stg_produtos
+[0m20:46:45.090877 [debug] [Thread-4 (]: Began running node model.mage_case.stg_vendas
+[0m20:46:45.091641 [info ] [Thread-1 (]: 1 of 4 START sql view model public.stg_clientes ................................ [RUN]
+[0m20:46:45.092775 [info ] [Thread-2 (]: 2 of 4 START sql view model public.stg_itens_vendas ............................ [RUN]
+[0m20:46:45.094526 [info ] [Thread-3 (]: 3 of 4 START sql view model public.stg_produtos ................................ [RUN]
+[0m20:46:45.096060 [info ] [Thread-4 (]: 4 of 4 START sql view model public.stg_vendas .................................. [RUN]
+[0m20:46:45.097877 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dbt_public, now model.mage_case.stg_clientes)
+[0m20:46:45.099797 [debug] [Thread-2 (]: Acquiring new postgres connection 'model.mage_case.stg_itens_vendas'
+[0m20:46:45.101892 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.mage_case.stg_produtos'
+[0m20:46:45.103924 [debug] [Thread-4 (]: Acquiring new postgres connection 'model.mage_case.stg_vendas'
+[0m20:46:45.104789 [debug] [Thread-1 (]: Began compiling node model.mage_case.stg_clientes
+[0m20:46:45.105543 [debug] [Thread-2 (]: Began compiling node model.mage_case.stg_itens_vendas
+[0m20:46:45.106265 [debug] [Thread-3 (]: Began compiling node model.mage_case.stg_produtos
+[0m20:46:45.107014 [debug] [Thread-4 (]: Began compiling node model.mage_case.stg_vendas
+[0m20:46:45.116647 [debug] [Thread-1 (]: Writing injected SQL for node "model.mage_case.stg_clientes"
+[0m20:46:45.120247 [debug] [Thread-2 (]: Writing injected SQL for node "model.mage_case.stg_itens_vendas"
+[0m20:46:45.124004 [debug] [Thread-3 (]: Writing injected SQL for node "model.mage_case.stg_produtos"
+[0m20:46:45.128441 [debug] [Thread-4 (]: Writing injected SQL for node "model.mage_case.stg_vendas"
+[0m20:46:45.142670 [debug] [Thread-2 (]: Timing info for model.mage_case.stg_itens_vendas (compile): 20:46:45.117536 => 20:46:45.142205
+[0m20:46:45.144080 [debug] [Thread-2 (]: Began executing node model.mage_case.stg_itens_vendas
+[0m20:46:45.145076 [debug] [Thread-1 (]: Timing info for model.mage_case.stg_clientes (compile): 20:46:45.107971 => 20:46:45.144697
+[0m20:46:45.152440 [debug] [Thread-4 (]: Timing info for model.mage_case.stg_vendas (compile): 20:46:45.124845 => 20:46:45.151689
+[0m20:46:45.162551 [debug] [Thread-3 (]: Timing info for model.mage_case.stg_produtos (compile): 20:46:45.121385 => 20:46:45.162020
+[0m20:46:45.184123 [debug] [Thread-1 (]: Began executing node model.mage_case.stg_clientes
+[0m20:46:45.184888 [debug] [Thread-2 (]: Writing runtime sql for node "model.mage_case.stg_itens_vendas"
+[0m20:46:45.186267 [debug] [Thread-4 (]: Began executing node model.mage_case.stg_vendas
+[0m20:46:45.187382 [debug] [Thread-3 (]: Began executing node model.mage_case.stg_produtos
+[0m20:46:45.192446 [debug] [Thread-1 (]: Writing runtime sql for node "model.mage_case.stg_clientes"
+[0m20:46:45.198956 [debug] [Thread-4 (]: Writing runtime sql for node "model.mage_case.stg_vendas"
+[0m20:46:45.204071 [debug] [Thread-3 (]: Writing runtime sql for node "model.mage_case.stg_produtos"
+[0m20:46:45.214038 [debug] [Thread-3 (]: Using postgres connection "model.mage_case.stg_produtos"
+[0m20:46:45.215555 [debug] [Thread-3 (]: On model.mage_case.stg_produtos: BEGIN
+[0m20:46:45.216230 [debug] [Thread-4 (]: Using postgres connection "model.mage_case.stg_vendas"
+[0m20:46:45.217703 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m20:46:45.218534 [debug] [Thread-1 (]: Using postgres connection "model.mage_case.stg_clientes"
+[0m20:46:45.219144 [debug] [Thread-2 (]: Using postgres connection "model.mage_case.stg_itens_vendas"
+[0m20:46:45.220155 [debug] [Thread-4 (]: On model.mage_case.stg_vendas: BEGIN
+[0m20:46:45.222573 [debug] [Thread-1 (]: On model.mage_case.stg_clientes: BEGIN
+[0m20:46:45.224115 [debug] [Thread-2 (]: On model.mage_case.stg_itens_vendas: BEGIN
+[0m20:46:45.225600 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m20:46:45.226848 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:46:45.228151 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m20:46:45.231510 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m20:46:45.238727 [debug] [Thread-3 (]: Using postgres connection "model.mage_case.stg_produtos"
+[0m20:46:45.240128 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m20:46:45.241039 [debug] [Thread-3 (]: On model.mage_case.stg_produtos: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "node_id": "model.mage_case.stg_produtos"} */
+
+  create view "dbt"."public"."stg_produtos__dbt_tmp"
+    
+    
+  as (
+    
+
+select *
+from read_parquet('s3://mage-bucket/parquet/produtos.parquet')
+  );
+[0m20:46:45.241742 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m20:46:45.242458 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m20:46:45.243174 [debug] [Thread-2 (]: Using postgres connection "model.mage_case.stg_itens_vendas"
+[0m20:46:45.245025 [debug] [Thread-1 (]: Using postgres connection "model.mage_case.stg_clientes"
+[0m20:46:45.245980 [debug] [Thread-3 (]: Postgres adapter: Postgres error: function read_parquet(unknown) does not exist
+LINE 10: from read_parquet('s3://mage-bucket/parquet/produtos.parquet...
+              ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+[0m20:46:45.247037 [debug] [Thread-4 (]: Using postgres connection "model.mage_case.stg_vendas"
+[0m20:46:45.247929 [debug] [Thread-2 (]: On model.mage_case.stg_itens_vendas: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "node_id": "model.mage_case.stg_itens_vendas"} */
+
+  create view "dbt"."public"."stg_itens_vendas__dbt_tmp"
+    
+    
+  as (
+    
+
+select *
+from read_parquet('s3://mage-bucket/parquet/itens_vendas.parquet')
+  );
+[0m20:46:45.248804 [debug] [Thread-1 (]: On model.mage_case.stg_clientes: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "node_id": "model.mage_case.stg_clientes"} */
+
+  create view "dbt"."public"."stg_clientes__dbt_tmp"
+    
+    
+  as (
+    
+
+select *
+from read_parquet('s3://mage-bucket/parquet/clientes.parquet')
+  );
+[0m20:46:45.249693 [debug] [Thread-3 (]: On model.mage_case.stg_produtos: ROLLBACK
+[0m20:46:45.250845 [debug] [Thread-4 (]: On model.mage_case.stg_vendas: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "node_id": "model.mage_case.stg_vendas"} */
+
+  create view "dbt"."public"."stg_vendas__dbt_tmp"
+    
+    
+  as (
+    
+
+select *
+from read_parquet('s3://mage-bucket/parquet/vendas.parquet')
+  );
+[0m20:46:45.252651 [debug] [Thread-2 (]: Postgres adapter: Postgres error: function read_parquet(unknown) does not exist
+LINE 10: from read_parquet('s3://mage-bucket/parquet/itens_vendas.par...
+              ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+[0m20:46:45.254139 [debug] [Thread-1 (]: Postgres adapter: Postgres error: function read_parquet(unknown) does not exist
+LINE 10: from read_parquet('s3://mage-bucket/parquet/clientes.parquet...
+              ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+[0m20:46:45.255230 [debug] [Thread-3 (]: Timing info for model.mage_case.stg_produtos (execute): 20:46:45.200284 => 20:46:45.254894
+[0m20:46:45.256818 [debug] [Thread-2 (]: On model.mage_case.stg_itens_vendas: ROLLBACK
+[0m20:46:45.257493 [debug] [Thread-4 (]: Postgres adapter: Postgres error: function read_parquet(unknown) does not exist
+LINE 10: from read_parquet('s3://mage-bucket/parquet/vendas.parquet')
+              ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+[0m20:46:45.258625 [debug] [Thread-1 (]: On model.mage_case.stg_clientes: ROLLBACK
+[0m20:46:45.259572 [debug] [Thread-3 (]: On model.mage_case.stg_produtos: Close
+[0m20:46:45.261146 [debug] [Thread-2 (]: Timing info for model.mage_case.stg_itens_vendas (execute): 20:46:45.146136 => 20:46:45.260813
+[0m20:46:45.261889 [debug] [Thread-4 (]: On model.mage_case.stg_vendas: ROLLBACK
+[0m20:46:45.263313 [debug] [Thread-1 (]: Timing info for model.mage_case.stg_clientes (execute): 20:46:45.188279 => 20:46:45.263035
+[0m20:46:45.265373 [debug] [Thread-2 (]: On model.mage_case.stg_itens_vendas: Close
+[0m20:46:45.267439 [debug] [Thread-4 (]: Timing info for model.mage_case.stg_vendas (execute): 20:46:45.194366 => 20:46:45.267037
+[0m20:46:45.268566 [debug] [Thread-1 (]: On model.mage_case.stg_clientes: Close
+[0m20:46:45.271583 [debug] [Thread-4 (]: On model.mage_case.stg_vendas: Close
+[0m20:46:45.278552 [debug] [Thread-1 (]: Database Error in model stg_clientes (models/stagking/stg_clientes.sql)
+  function read_parquet(unknown) does not exist
+  LINE 10: from read_parquet('s3://mage-bucket/parquet/clientes.parquet...
+                ^
+  HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+  compiled Code at target/run/mage_case/models/stagking/stg_clientes.sql
+[0m20:46:45.279385 [debug] [Thread-3 (]: Database Error in model stg_produtos (models/stagking/stg_produtos.sql)
+  function read_parquet(unknown) does not exist
+  LINE 10: from read_parquet('s3://mage-bucket/parquet/produtos.parquet...
+                ^
+  HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+  compiled Code at target/run/mage_case/models/stagking/stg_produtos.sql
+[0m20:46:45.280172 [debug] [Thread-4 (]: Database Error in model stg_vendas (models/stagking/stg_vendas.sql)
+  function read_parquet(unknown) does not exist
+  LINE 10: from read_parquet('s3://mage-bucket/parquet/vendas.parquet')
+                ^
+  HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+  compiled Code at target/run/mage_case/models/stagking/stg_vendas.sql
+[0m20:46:45.281497 [debug] [Thread-2 (]: Database Error in model stg_itens_vendas (models/stagking/stg_itens_vendas.sql)
+  function read_parquet(unknown) does not exist
+  LINE 10: from read_parquet('s3://mage-bucket/parquet/itens_vendas.par...
+                ^
+  HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+  compiled Code at target/run/mage_case/models/stagking/stg_itens_vendas.sql
+[0m20:46:45.282481 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c3837fbc-9d8b-4dba-be0f-546cd31fcf29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7535cc1d5660>]}
+[0m20:46:45.283795 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c3837fbc-9d8b-4dba-be0f-546cd31fcf29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7535caf476d0>]}
+[0m20:46:45.284968 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c3837fbc-9d8b-4dba-be0f-546cd31fcf29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7535cc219cf0>]}
+[0m20:46:45.286243 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'c3837fbc-9d8b-4dba-be0f-546cd31fcf29', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7535cb0a92d0>]}
+[0m20:46:45.287754 [error] [Thread-1 (]: 1 of 4 ERROR creating sql view model public.stg_clientes ....................... [[31mERROR[0m in 0.19s]
+[0m20:46:45.289331 [error] [Thread-3 (]: 3 of 4 ERROR creating sql view model public.stg_produtos ....................... [[31mERROR[0m in 0.18s]
+[0m20:46:45.290783 [error] [Thread-4 (]: 4 of 4 ERROR creating sql view model public.stg_vendas ......................... [[31mERROR[0m in 0.18s]
+[0m20:46:45.292058 [error] [Thread-2 (]: 2 of 4 ERROR creating sql view model public.stg_itens_vendas ................... [[31mERROR[0m in 0.19s]
+[0m20:46:45.293636 [debug] [Thread-1 (]: Finished running node model.mage_case.stg_clientes
+[0m20:46:45.295281 [debug] [Thread-3 (]: Finished running node model.mage_case.stg_produtos
+[0m20:46:45.296651 [debug] [Thread-4 (]: Finished running node model.mage_case.stg_vendas
+[0m20:46:45.297684 [debug] [Thread-2 (]: Finished running node model.mage_case.stg_itens_vendas
+[0m20:46:45.302240 [debug] [MainThread]: Using postgres connection "master"
+[0m20:46:45.303510 [debug] [MainThread]: On master: BEGIN
+[0m20:46:45.304542 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m20:46:45.314356 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m20:46:45.315606 [debug] [MainThread]: On master: COMMIT
+[0m20:46:45.316585 [debug] [MainThread]: Using postgres connection "master"
+[0m20:46:45.317564 [debug] [MainThread]: On master: COMMIT
+[0m20:46:45.318607 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m20:46:45.319467 [debug] [MainThread]: On master: Close
+[0m20:46:45.320622 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:46:45.323467 [debug] [MainThread]: Connection 'model.mage_case.stg_clientes' was properly closed.
+[0m20:46:45.324831 [debug] [MainThread]: Connection 'model.mage_case.stg_itens_vendas' was properly closed.
+[0m20:46:45.326049 [debug] [MainThread]: Connection 'model.mage_case.stg_produtos' was properly closed.
+[0m20:46:45.326882 [debug] [MainThread]: Connection 'model.mage_case.stg_vendas' was properly closed.
+[0m20:46:45.327842 [info ] [MainThread]: 
+[0m20:46:45.328796 [info ] [MainThread]: Finished running 4 view models in 0 hours 0 minutes and 0.37 seconds (0.37s).
+[0m20:46:45.331514 [debug] [MainThread]: Command end result
+[0m20:46:45.358595 [info ] [MainThread]: 
+[0m20:46:45.360373 [info ] [MainThread]: [31mCompleted with 4 errors and 0 warnings:[0m
+[0m20:46:45.362137 [info ] [MainThread]: 
+[0m20:46:45.364616 [error] [MainThread]:   Database Error in model stg_clientes (models/stagking/stg_clientes.sql)
+  function read_parquet(unknown) does not exist
+  LINE 10: from read_parquet('s3://mage-bucket/parquet/clientes.parquet...
+                ^
+  HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+  compiled Code at target/run/mage_case/models/stagking/stg_clientes.sql
+[0m20:46:45.366336 [info ] [MainThread]: 
+[0m20:46:45.368238 [error] [MainThread]:   Database Error in model stg_produtos (models/stagking/stg_produtos.sql)
+  function read_parquet(unknown) does not exist
+  LINE 10: from read_parquet('s3://mage-bucket/parquet/produtos.parquet...
+                ^
+  HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+  compiled Code at target/run/mage_case/models/stagking/stg_produtos.sql
+[0m20:46:45.369599 [info ] [MainThread]: 
+[0m20:46:45.371188 [error] [MainThread]:   Database Error in model stg_vendas (models/stagking/stg_vendas.sql)
+  function read_parquet(unknown) does not exist
+  LINE 10: from read_parquet('s3://mage-bucket/parquet/vendas.parquet')
+                ^
+  HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+  compiled Code at target/run/mage_case/models/stagking/stg_vendas.sql
+[0m20:46:45.373195 [info ] [MainThread]: 
+[0m20:46:45.376273 [error] [MainThread]:   Database Error in model stg_itens_vendas (models/stagking/stg_itens_vendas.sql)
+  function read_parquet(unknown) does not exist
+  LINE 10: from read_parquet('s3://mage-bucket/parquet/itens_vendas.par...
+                ^
+  HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+  compiled Code at target/run/mage_case/models/stagking/stg_itens_vendas.sql
+[0m20:46:45.378033 [info ] [MainThread]: 
+[0m20:46:45.379806 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=4 SKIP=0 TOTAL=4
+[0m20:46:45.382702 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7535cf957310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7535cc454fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7535cc20bc70>]}
+[0m20:46:45.384000 [debug] [MainThread]: Flushing usage events
+[0m20:51:13.299563 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71114bf1b310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71114aa3f100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71114c5ac2b0>]}
+
+
+============================== 20:51:13.305406 | 726bf8fc-7da6-42e4-acde-8edd9420c30a ==============================
+[0m20:51:13.305406 [info ] [MainThread]: Running with dbt=1.7.9
+[0m20:51:13.306398 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/usr/app', 'version_check': 'True', 'debug': 'False', 'log_path': '/usr/app/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m20:51:13.497951 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '726bf8fc-7da6-42e4-acde-8edd9420c30a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71114aa3f100>]}
+[0m20:51:13.585946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '726bf8fc-7da6-42e4-acde-8edd9420c30a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71114a3969e0>]}
+[0m20:51:13.587686 [info ] [MainThread]: Registered adapter: postgres=1.7.9
+[0m20:51:13.602911 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m20:51:13.704469 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:51:13.705458 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:51:13.706429 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.mage_case.data_mart
+- models.mage_case.staging
+[0m20:51:13.713064 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '726bf8fc-7da6-42e4-acde-8edd9420c30a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7111487020e0>]}
+[0m20:51:13.736090 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '726bf8fc-7da6-42e4-acde-8edd9420c30a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x711148814d30>]}
+[0m20:51:13.738482 [info ] [MainThread]: Found 4 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m20:51:13.741211 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '726bf8fc-7da6-42e4-acde-8edd9420c30a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x711148814fa0>]}
+[0m20:51:13.744806 [info ] [MainThread]: 
+[0m20:51:13.746797 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m20:51:13.750098 [debug] [ThreadPool]: Acquiring new postgres connection 'list_dbt'
+[0m20:51:13.761589 [debug] [ThreadPool]: Using postgres connection "list_dbt"
+[0m20:51:13.762845 [debug] [ThreadPool]: On list_dbt: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "connection_name": "list_dbt"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m20:51:13.763970 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:51:13.779472 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.0 seconds
+[0m20:51:13.781166 [debug] [ThreadPool]: On list_dbt: Close
+[0m20:51:13.783235 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt, now list_dbt_public)
+[0m20:51:13.791174 [debug] [ThreadPool]: Using postgres connection "list_dbt_public"
+[0m20:51:13.792067 [debug] [ThreadPool]: On list_dbt_public: BEGIN
+[0m20:51:13.792692 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m20:51:13.801022 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m20:51:13.802040 [debug] [ThreadPool]: Using postgres connection "list_dbt_public"
+[0m20:51:13.803020 [debug] [ThreadPool]: On list_dbt_public: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "connection_name": "list_dbt_public"} */
+select
+      'dbt' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'dbt' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'dbt' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m20:51:13.807191 [debug] [ThreadPool]: SQL status: SELECT 0 in 0.0 seconds
+[0m20:51:13.808985 [debug] [ThreadPool]: On list_dbt_public: ROLLBACK
+[0m20:51:13.810093 [debug] [ThreadPool]: On list_dbt_public: Close
+[0m20:51:13.814929 [debug] [MainThread]: Using postgres connection "master"
+[0m20:51:13.815848 [debug] [MainThread]: On master: BEGIN
+[0m20:51:13.816493 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:51:13.823722 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m20:51:13.824603 [debug] [MainThread]: Using postgres connection "master"
+[0m20:51:13.825334 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m20:51:13.828518 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m20:51:13.830088 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '726bf8fc-7da6-42e4-acde-8edd9420c30a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7111487534c0>]}
+[0m20:51:13.830930 [debug] [MainThread]: On master: ROLLBACK
+[0m20:51:13.832074 [debug] [MainThread]: Using postgres connection "master"
+[0m20:51:13.833028 [debug] [MainThread]: On master: BEGIN
+[0m20:51:13.834160 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m20:51:13.834837 [debug] [MainThread]: On master: COMMIT
+[0m20:51:13.835446 [debug] [MainThread]: Using postgres connection "master"
+[0m20:51:13.836030 [debug] [MainThread]: On master: COMMIT
+[0m20:51:13.836744 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m20:51:13.837361 [debug] [MainThread]: On master: Close
+[0m20:51:13.838335 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:51:13.839333 [info ] [MainThread]: 
+[0m20:51:13.847282 [debug] [Thread-1 (]: Began running node model.mage_case.stg_clientes
+[0m20:51:13.847850 [debug] [Thread-2 (]: Began running node model.mage_case.stg_itens_vendas
+[0m20:51:13.848329 [debug] [Thread-3 (]: Began running node model.mage_case.stg_produtos
+[0m20:51:13.848967 [debug] [Thread-4 (]: Began running node model.mage_case.stg_vendas
+[0m20:51:13.849773 [info ] [Thread-1 (]: 1 of 4 START sql view model public.stg_clientes ................................ [RUN]
+[0m20:51:13.850772 [info ] [Thread-2 (]: 2 of 4 START sql view model public.stg_itens_vendas ............................ [RUN]
+[0m20:51:13.851993 [info ] [Thread-3 (]: 3 of 4 START sql view model public.stg_produtos ................................ [RUN]
+[0m20:51:13.853335 [info ] [Thread-4 (]: 4 of 4 START sql view model public.stg_vendas .................................. [RUN]
+[0m20:51:13.856011 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dbt_public, now model.mage_case.stg_clientes)
+[0m20:51:13.858196 [debug] [Thread-2 (]: Acquiring new postgres connection 'model.mage_case.stg_itens_vendas'
+[0m20:51:13.859642 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.mage_case.stg_produtos'
+[0m20:51:13.861190 [debug] [Thread-4 (]: Acquiring new postgres connection 'model.mage_case.stg_vendas'
+[0m20:51:13.862654 [debug] [Thread-1 (]: Began compiling node model.mage_case.stg_clientes
+[0m20:51:13.863713 [debug] [Thread-2 (]: Began compiling node model.mage_case.stg_itens_vendas
+[0m20:51:13.864590 [debug] [Thread-3 (]: Began compiling node model.mage_case.stg_produtos
+[0m20:51:13.865310 [debug] [Thread-4 (]: Began compiling node model.mage_case.stg_vendas
+[0m20:51:13.873397 [debug] [Thread-1 (]: Writing injected SQL for node "model.mage_case.stg_clientes"
+[0m20:51:13.876622 [debug] [Thread-2 (]: Writing injected SQL for node "model.mage_case.stg_itens_vendas"
+[0m20:51:13.881770 [debug] [Thread-3 (]: Writing injected SQL for node "model.mage_case.stg_produtos"
+[0m20:51:13.886971 [debug] [Thread-4 (]: Writing injected SQL for node "model.mage_case.stg_vendas"
+[0m20:51:13.892787 [debug] [Thread-1 (]: Timing info for model.mage_case.stg_clientes (compile): 20:51:13.865918 => 20:51:13.892309
+[0m20:51:13.893395 [debug] [Thread-3 (]: Timing info for model.mage_case.stg_produtos (compile): 20:51:13.877673 => 20:51:13.893118
+[0m20:51:13.894443 [debug] [Thread-2 (]: Timing info for model.mage_case.stg_itens_vendas (compile): 20:51:13.874349 => 20:51:13.894086
+[0m20:51:13.895276 [debug] [Thread-1 (]: Began executing node model.mage_case.stg_clientes
+[0m20:51:13.896373 [debug] [Thread-4 (]: Timing info for model.mage_case.stg_vendas (compile): 20:51:13.883824 => 20:51:13.896095
+[0m20:51:13.896792 [debug] [Thread-3 (]: Began executing node model.mage_case.stg_produtos
+[0m20:51:13.897619 [debug] [Thread-2 (]: Began executing node model.mage_case.stg_itens_vendas
+[0m20:51:13.919948 [debug] [Thread-4 (]: Began executing node model.mage_case.stg_vendas
+[0m20:51:13.930870 [debug] [Thread-1 (]: Writing runtime sql for node "model.mage_case.stg_clientes"
+[0m20:51:13.935539 [debug] [Thread-3 (]: Writing runtime sql for node "model.mage_case.stg_produtos"
+[0m20:51:13.941537 [debug] [Thread-2 (]: Writing runtime sql for node "model.mage_case.stg_itens_vendas"
+[0m20:51:13.946618 [debug] [Thread-4 (]: Writing runtime sql for node "model.mage_case.stg_vendas"
+[0m20:51:13.953069 [debug] [Thread-1 (]: Using postgres connection "model.mage_case.stg_clientes"
+[0m20:51:13.953822 [debug] [Thread-3 (]: Using postgres connection "model.mage_case.stg_produtos"
+[0m20:51:13.955035 [debug] [Thread-2 (]: Using postgres connection "model.mage_case.stg_itens_vendas"
+[0m20:51:13.955515 [debug] [Thread-1 (]: On model.mage_case.stg_clientes: BEGIN
+[0m20:51:13.956521 [debug] [Thread-3 (]: On model.mage_case.stg_produtos: BEGIN
+[0m20:51:13.957045 [debug] [Thread-4 (]: Using postgres connection "model.mage_case.stg_vendas"
+[0m20:51:13.957760 [debug] [Thread-2 (]: On model.mage_case.stg_itens_vendas: BEGIN
+[0m20:51:13.958633 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m20:51:13.959493 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m20:51:13.960315 [debug] [Thread-4 (]: On model.mage_case.stg_vendas: BEGIN
+[0m20:51:13.961129 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m20:51:13.963796 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m20:51:13.970809 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m20:51:13.971924 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m20:51:13.972690 [debug] [Thread-1 (]: Using postgres connection "model.mage_case.stg_clientes"
+[0m20:51:13.973433 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m20:51:13.973989 [debug] [Thread-3 (]: Using postgres connection "model.mage_case.stg_produtos"
+[0m20:51:13.974408 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m20:51:13.975036 [debug] [Thread-1 (]: On model.mage_case.stg_clientes: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "node_id": "model.mage_case.stg_clientes"} */
+
+  create view "dbt"."public"."stg_clientes__dbt_tmp"
+    
+    
+  as (
+    
+
+select *
+from read_parquet('s3://mage-bucket/parquet/clientes.parquet')
+  );
+[0m20:51:13.975799 [debug] [Thread-2 (]: Using postgres connection "model.mage_case.stg_itens_vendas"
+[0m20:51:13.976526 [debug] [Thread-3 (]: On model.mage_case.stg_produtos: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "node_id": "model.mage_case.stg_produtos"} */
+
+  create view "dbt"."public"."stg_produtos__dbt_tmp"
+    
+    
+  as (
+    
+
+select *
+from read_parquet('s3://mage-bucket/parquet/produtos.parquet')
+  );
+[0m20:51:13.977233 [debug] [Thread-4 (]: Using postgres connection "model.mage_case.stg_vendas"
+[0m20:51:13.978462 [debug] [Thread-2 (]: On model.mage_case.stg_itens_vendas: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "node_id": "model.mage_case.stg_itens_vendas"} */
+
+  create view "dbt"."public"."stg_itens_vendas__dbt_tmp"
+    
+    
+  as (
+    
+
+select *
+from read_parquet('s3://mage-bucket/parquet/itens_vendas.parquet')
+  );
+[0m20:51:13.978964 [debug] [Thread-1 (]: Postgres adapter: Postgres error: function read_parquet(unknown) does not exist
+LINE 10: from read_parquet('s3://mage-bucket/parquet/clientes.parquet...
+              ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+[0m20:51:13.980152 [debug] [Thread-3 (]: Postgres adapter: Postgres error: function read_parquet(unknown) does not exist
+LINE 10: from read_parquet('s3://mage-bucket/parquet/produtos.parquet...
+              ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+[0m20:51:13.980547 [debug] [Thread-4 (]: On model.mage_case.stg_vendas: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "node_id": "model.mage_case.stg_vendas"} */
+
+  create view "dbt"."public"."stg_vendas__dbt_tmp"
+    
+    
+  as (
+    
+
+select *
+from read_parquet('s3://mage-bucket/parquet/vendas.parquet')
+  );
+[0m20:51:13.981722 [debug] [Thread-2 (]: Postgres adapter: Postgres error: function read_parquet(unknown) does not exist
+LINE 10: from read_parquet('s3://mage-bucket/parquet/itens_vendas.par...
+              ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+[0m20:51:13.982131 [debug] [Thread-1 (]: On model.mage_case.stg_clientes: ROLLBACK
+[0m20:51:13.982878 [debug] [Thread-3 (]: On model.mage_case.stg_produtos: ROLLBACK
+[0m20:51:13.984034 [debug] [Thread-4 (]: Postgres adapter: Postgres error: function read_parquet(unknown) does not exist
+LINE 10: from read_parquet('s3://mage-bucket/parquet/vendas.parquet')
+              ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+[0m20:51:13.984407 [debug] [Thread-2 (]: On model.mage_case.stg_itens_vendas: ROLLBACK
+[0m20:51:13.985530 [debug] [Thread-1 (]: Timing info for model.mage_case.stg_clientes (execute): 20:51:13.898236 => 20:51:13.985297
+[0m20:51:13.986424 [debug] [Thread-3 (]: Timing info for model.mage_case.stg_produtos (execute): 20:51:13.931816 => 20:51:13.986213
+[0m20:51:13.987025 [debug] [Thread-4 (]: On model.mage_case.stg_vendas: ROLLBACK
+[0m20:51:13.988037 [debug] [Thread-2 (]: Timing info for model.mage_case.stg_itens_vendas (execute): 20:51:13.936681 => 20:51:13.987827
+[0m20:51:13.988701 [debug] [Thread-1 (]: On model.mage_case.stg_clientes: Close
+[0m20:51:13.989453 [debug] [Thread-3 (]: On model.mage_case.stg_produtos: Close
+[0m20:51:13.990526 [debug] [Thread-4 (]: Timing info for model.mage_case.stg_vendas (execute): 20:51:13.942794 => 20:51:13.990311
+[0m20:51:13.991012 [debug] [Thread-2 (]: On model.mage_case.stg_itens_vendas: Close
+[0m20:51:13.994286 [debug] [Thread-4 (]: On model.mage_case.stg_vendas: Close
+[0m20:51:14.002133 [debug] [Thread-3 (]: Database Error in model stg_produtos (models/stagking/stg_produtos.sql)
+  function read_parquet(unknown) does not exist
+  LINE 10: from read_parquet('s3://mage-bucket/parquet/produtos.parquet...
+                ^
+  HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+  compiled Code at target/run/mage_case/models/stagking/stg_produtos.sql
+[0m20:51:14.002947 [debug] [Thread-2 (]: Database Error in model stg_itens_vendas (models/stagking/stg_itens_vendas.sql)
+  function read_parquet(unknown) does not exist
+  LINE 10: from read_parquet('s3://mage-bucket/parquet/itens_vendas.par...
+                ^
+  HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+  compiled Code at target/run/mage_case/models/stagking/stg_itens_vendas.sql
+[0m20:51:14.004028 [debug] [Thread-1 (]: Database Error in model stg_clientes (models/stagking/stg_clientes.sql)
+  function read_parquet(unknown) does not exist
+  LINE 10: from read_parquet('s3://mage-bucket/parquet/clientes.parquet...
+                ^
+  HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+  compiled Code at target/run/mage_case/models/stagking/stg_clientes.sql
+[0m20:51:14.004648 [debug] [Thread-4 (]: Database Error in model stg_vendas (models/stagking/stg_vendas.sql)
+  function read_parquet(unknown) does not exist
+  LINE 10: from read_parquet('s3://mage-bucket/parquet/vendas.parquet')
+                ^
+  HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+  compiled Code at target/run/mage_case/models/stagking/stg_vendas.sql
+[0m20:51:14.005087 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '726bf8fc-7da6-42e4-acde-8edd9420c30a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7111487ed6f0>]}
+[0m20:51:14.005938 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '726bf8fc-7da6-42e4-acde-8edd9420c30a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7111487ee110>]}
+[0m20:51:14.006824 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '726bf8fc-7da6-42e4-acde-8edd9420c30a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7111487d63b0>]}
+[0m20:51:14.007592 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '726bf8fc-7da6-42e4-acde-8edd9420c30a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x711148702da0>]}
+[0m20:51:14.008648 [error] [Thread-3 (]: 3 of 4 ERROR creating sql view model public.stg_produtos ....................... [[31mERROR[0m in 0.15s]
+[0m20:51:14.009787 [error] [Thread-2 (]: 2 of 4 ERROR creating sql view model public.stg_itens_vendas ................... [[31mERROR[0m in 0.15s]
+[0m20:51:14.011124 [error] [Thread-1 (]: 1 of 4 ERROR creating sql view model public.stg_clientes ....................... [[31mERROR[0m in 0.15s]
+[0m20:51:14.012401 [error] [Thread-4 (]: 4 of 4 ERROR creating sql view model public.stg_vendas ......................... [[31mERROR[0m in 0.15s]
+[0m20:51:14.013672 [debug] [Thread-3 (]: Finished running node model.mage_case.stg_produtos
+[0m20:51:14.014721 [debug] [Thread-2 (]: Finished running node model.mage_case.stg_itens_vendas
+[0m20:51:14.015629 [debug] [Thread-1 (]: Finished running node model.mage_case.stg_clientes
+[0m20:51:14.016498 [debug] [Thread-4 (]: Finished running node model.mage_case.stg_vendas
+[0m20:51:14.020959 [debug] [MainThread]: Using postgres connection "master"
+[0m20:51:14.021865 [debug] [MainThread]: On master: BEGIN
+[0m20:51:14.022629 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m20:51:14.030513 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m20:51:14.031421 [debug] [MainThread]: On master: COMMIT
+[0m20:51:14.032092 [debug] [MainThread]: Using postgres connection "master"
+[0m20:51:14.032755 [debug] [MainThread]: On master: COMMIT
+[0m20:51:14.033951 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m20:51:14.035622 [debug] [MainThread]: On master: Close
+[0m20:51:14.037346 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:51:14.038590 [debug] [MainThread]: Connection 'model.mage_case.stg_clientes' was properly closed.
+[0m20:51:14.039667 [debug] [MainThread]: Connection 'model.mage_case.stg_itens_vendas' was properly closed.
+[0m20:51:14.040618 [debug] [MainThread]: Connection 'model.mage_case.stg_produtos' was properly closed.
+[0m20:51:14.042355 [debug] [MainThread]: Connection 'model.mage_case.stg_vendas' was properly closed.
+[0m20:51:14.043828 [info ] [MainThread]: 
+[0m20:51:14.045652 [info ] [MainThread]: Finished running 4 view models in 0 hours 0 minutes and 0.30 seconds (0.30s).
+[0m20:51:14.047768 [debug] [MainThread]: Command end result
+[0m20:51:14.065771 [info ] [MainThread]: 
+[0m20:51:14.067001 [info ] [MainThread]: [31mCompleted with 4 errors and 0 warnings:[0m
+[0m20:51:14.068843 [info ] [MainThread]: 
+[0m20:51:14.071967 [error] [MainThread]:   Database Error in model stg_produtos (models/stagking/stg_produtos.sql)
+  function read_parquet(unknown) does not exist
+  LINE 10: from read_parquet('s3://mage-bucket/parquet/produtos.parquet...
+                ^
+  HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+  compiled Code at target/run/mage_case/models/stagking/stg_produtos.sql
+[0m20:51:14.074323 [info ] [MainThread]: 
+[0m20:51:14.075986 [error] [MainThread]:   Database Error in model stg_itens_vendas (models/stagking/stg_itens_vendas.sql)
+  function read_parquet(unknown) does not exist
+  LINE 10: from read_parquet('s3://mage-bucket/parquet/itens_vendas.par...
+                ^
+  HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+  compiled Code at target/run/mage_case/models/stagking/stg_itens_vendas.sql
+[0m20:51:14.077560 [info ] [MainThread]: 
+[0m20:51:14.079614 [error] [MainThread]:   Database Error in model stg_clientes (models/stagking/stg_clientes.sql)
+  function read_parquet(unknown) does not exist
+  LINE 10: from read_parquet('s3://mage-bucket/parquet/clientes.parquet...
+                ^
+  HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+  compiled Code at target/run/mage_case/models/stagking/stg_clientes.sql
+[0m20:51:14.081108 [info ] [MainThread]: 
+[0m20:51:14.082792 [error] [MainThread]:   Database Error in model stg_vendas (models/stagking/stg_vendas.sql)
+  function read_parquet(unknown) does not exist
+  LINE 10: from read_parquet('s3://mage-bucket/parquet/vendas.parquet')
+                ^
+  HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+  compiled Code at target/run/mage_case/models/stagking/stg_vendas.sql
+[0m20:51:14.084506 [info ] [MainThread]: 
+[0m20:51:14.086565 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=4 SKIP=0 TOTAL=4
+[0m20:51:14.088958 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x71114bf1b310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7111488c3e20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7111488c3fa0>]}
+[0m20:51:14.090232 [debug] [MainThread]: Flushing usage events
+[0m00:06:49.741804 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c7e68bcf310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c7e67aa3100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c7e6930e680>]}
+
+
+============================== 00:06:49.749738 | ed178da1-a528-460f-afe0-a34278a40322 ==============================
+[0m00:06:49.749738 [info ] [MainThread]: Running with dbt=1.7.9
+[0m00:06:49.750912 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/usr/app/logs', 'debug': 'False', 'profiles_dir': '/usr/app', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:06:50.020964 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ed178da1-a528-460f-afe0-a34278a40322', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c7e67aa3100>]}
+[0m00:06:50.119264 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ed178da1-a528-460f-afe0-a34278a40322', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c7e676e7f10>]}
+[0m00:06:50.121536 [info ] [MainThread]: Registered adapter: postgres=1.7.9
+[0m00:06:50.139754 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m00:06:50.323665 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m00:06:50.325071 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m00:06:50.326499 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.mage_case.staging
+- models.mage_case.data_mart
+[0m00:06:50.336781 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ed178da1-a528-460f-afe0-a34278a40322', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c7e657620b0>]}
+[0m00:06:50.392836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ed178da1-a528-460f-afe0-a34278a40322', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c7e65694d00>]}
+[0m00:06:50.395247 [info ] [MainThread]: Found 4 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m00:06:50.397281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ed178da1-a528-460f-afe0-a34278a40322', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c7e65694f70>]}
+[0m00:06:50.402905 [info ] [MainThread]: 
+[0m00:06:50.405582 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m00:06:50.409609 [debug] [ThreadPool]: Acquiring new postgres connection 'list_dbt'
+[0m00:06:50.431627 [debug] [ThreadPool]: Using postgres connection "list_dbt"
+[0m00:06:50.433051 [debug] [ThreadPool]: On list_dbt: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "connection_name": "list_dbt"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m00:06:50.433974 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:06:50.459429 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.0 seconds
+[0m00:06:50.461594 [debug] [ThreadPool]: On list_dbt: Close
+[0m00:06:50.464327 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt, now list_dbt_public)
+[0m00:06:50.472706 [debug] [ThreadPool]: Using postgres connection "list_dbt_public"
+[0m00:06:50.473864 [debug] [ThreadPool]: On list_dbt_public: BEGIN
+[0m00:06:50.474719 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m00:06:50.484583 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m00:06:50.485705 [debug] [ThreadPool]: Using postgres connection "list_dbt_public"
+[0m00:06:50.486757 [debug] [ThreadPool]: On list_dbt_public: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "connection_name": "list_dbt_public"} */
+select
+      'dbt' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'dbt' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'dbt' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m00:06:50.493674 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.0 seconds
+[0m00:06:50.495782 [debug] [ThreadPool]: On list_dbt_public: ROLLBACK
+[0m00:06:50.496972 [debug] [ThreadPool]: On list_dbt_public: Close
+[0m00:06:50.505037 [debug] [MainThread]: Using postgres connection "master"
+[0m00:06:50.506215 [debug] [MainThread]: On master: BEGIN
+[0m00:06:50.507138 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:06:50.516533 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m00:06:50.517527 [debug] [MainThread]: Using postgres connection "master"
+[0m00:06:50.518794 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m00:06:50.525361 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m00:06:50.527271 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ed178da1-a528-460f-afe0-a34278a40322', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c7e65727fd0>]}
+[0m00:06:50.528528 [debug] [MainThread]: On master: ROLLBACK
+[0m00:06:50.529966 [debug] [MainThread]: Using postgres connection "master"
+[0m00:06:50.531249 [debug] [MainThread]: On master: BEGIN
+[0m00:06:50.532949 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m00:06:50.534200 [debug] [MainThread]: On master: COMMIT
+[0m00:06:50.535328 [debug] [MainThread]: Using postgres connection "master"
+[0m00:06:50.536656 [debug] [MainThread]: On master: COMMIT
+[0m00:06:50.538113 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m00:06:50.539288 [debug] [MainThread]: On master: Close
+[0m00:06:50.540928 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m00:06:50.543126 [info ] [MainThread]: 
+[0m00:06:50.555923 [debug] [Thread-1 (]: Began running node model.mage_case.stg_clientes
+[0m00:06:50.556477 [debug] [Thread-2 (]: Began running node model.mage_case.stg_itens_vendas
+[0m00:06:50.557000 [debug] [Thread-3 (]: Began running node model.mage_case.stg_produtos
+[0m00:06:50.557674 [debug] [Thread-4 (]: Began running node model.mage_case.stg_vendas
+[0m00:06:50.558689 [info ] [Thread-1 (]: 1 of 4 START sql view model public.stg_clientes ................................ [RUN]
+[0m00:06:50.560505 [info ] [Thread-2 (]: 2 of 4 START sql view model public.stg_itens_vendas ............................ [RUN]
+[0m00:06:50.562661 [info ] [Thread-3 (]: 3 of 4 START sql view model public.stg_produtos ................................ [RUN]
+[0m00:06:50.565042 [info ] [Thread-4 (]: 4 of 4 START sql view model public.stg_vendas .................................. [RUN]
+[0m00:06:50.568387 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dbt_public, now model.mage_case.stg_clientes)
+[0m00:06:50.571636 [debug] [Thread-2 (]: Acquiring new postgres connection 'model.mage_case.stg_itens_vendas'
+[0m00:06:50.574981 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.mage_case.stg_produtos'
+[0m00:06:50.578255 [debug] [Thread-4 (]: Acquiring new postgres connection 'model.mage_case.stg_vendas'
+[0m00:06:50.579810 [debug] [Thread-1 (]: Began compiling node model.mage_case.stg_clientes
+[0m00:06:50.581432 [debug] [Thread-2 (]: Began compiling node model.mage_case.stg_itens_vendas
+[0m00:06:50.583647 [debug] [Thread-3 (]: Began compiling node model.mage_case.stg_produtos
+[0m00:06:50.585194 [debug] [Thread-4 (]: Began compiling node model.mage_case.stg_vendas
+[0m00:06:50.597948 [debug] [Thread-1 (]: Writing injected SQL for node "model.mage_case.stg_clientes"
+[0m00:06:50.602951 [debug] [Thread-2 (]: Writing injected SQL for node "model.mage_case.stg_itens_vendas"
+[0m00:06:50.609665 [debug] [Thread-3 (]: Writing injected SQL for node "model.mage_case.stg_produtos"
+[0m00:06:50.613770 [debug] [Thread-4 (]: Writing injected SQL for node "model.mage_case.stg_vendas"
+[0m00:06:50.620998 [debug] [Thread-2 (]: Timing info for model.mage_case.stg_itens_vendas (compile): 00:06:50.598866 => 00:06:50.620401
+[0m00:06:50.623130 [debug] [Thread-2 (]: Began executing node model.mage_case.stg_itens_vendas
+[0m00:06:50.624251 [debug] [Thread-1 (]: Timing info for model.mage_case.stg_clientes (compile): 00:06:50.586301 => 00:06:50.623735
+[0m00:06:50.625062 [debug] [Thread-4 (]: Timing info for model.mage_case.stg_vendas (compile): 00:06:50.610556 => 00:06:50.624698
+[0m00:06:50.625956 [debug] [Thread-3 (]: Timing info for model.mage_case.stg_produtos (compile): 00:06:50.604236 => 00:06:50.625678
+[0m00:06:50.648335 [debug] [Thread-1 (]: Began executing node model.mage_case.stg_clientes
+[0m00:06:50.665632 [debug] [Thread-2 (]: Writing runtime sql for node "model.mage_case.stg_itens_vendas"
+[0m00:06:50.666567 [debug] [Thread-4 (]: Began executing node model.mage_case.stg_vendas
+[0m00:06:50.667824 [debug] [Thread-3 (]: Began executing node model.mage_case.stg_produtos
+[0m00:06:50.673103 [debug] [Thread-1 (]: Writing runtime sql for node "model.mage_case.stg_clientes"
+[0m00:06:50.681470 [debug] [Thread-4 (]: Writing runtime sql for node "model.mage_case.stg_vendas"
+[0m00:06:50.687110 [debug] [Thread-3 (]: Writing runtime sql for node "model.mage_case.stg_produtos"
+[0m00:06:50.688970 [debug] [Thread-2 (]: Using postgres connection "model.mage_case.stg_itens_vendas"
+[0m00:06:50.691818 [debug] [Thread-1 (]: Using postgres connection "model.mage_case.stg_clientes"
+[0m00:06:50.692481 [debug] [Thread-2 (]: On model.mage_case.stg_itens_vendas: BEGIN
+[0m00:06:50.693788 [debug] [Thread-4 (]: Using postgres connection "model.mage_case.stg_vendas"
+[0m00:06:50.694661 [debug] [Thread-1 (]: On model.mage_case.stg_clientes: BEGIN
+[0m00:06:50.695300 [debug] [Thread-3 (]: Using postgres connection "model.mage_case.stg_produtos"
+[0m00:06:50.696429 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m00:06:50.697592 [debug] [Thread-4 (]: On model.mage_case.stg_vendas: BEGIN
+[0m00:06:50.698709 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:06:50.699670 [debug] [Thread-3 (]: On model.mage_case.stg_produtos: BEGIN
+[0m00:06:50.701511 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m00:06:50.703946 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m00:06:50.711774 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m00:06:50.712414 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m00:06:50.713627 [debug] [Thread-2 (]: Using postgres connection "model.mage_case.stg_itens_vendas"
+[0m00:06:50.714850 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m00:06:50.715465 [debug] [Thread-1 (]: Using postgres connection "model.mage_case.stg_clientes"
+[0m00:06:50.715989 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m00:06:50.716986 [debug] [Thread-2 (]: On model.mage_case.stg_itens_vendas: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "node_id": "model.mage_case.stg_itens_vendas"} */
+
+  create view "dbt"."public"."stg_itens_vendas__dbt_tmp"
+    
+    
+  as (
+    
+
+select *
+from read_parquet('s3://mage-bucket/parquet/itens_vendas.parquet')
+  );
+[0m00:06:50.717972 [debug] [Thread-4 (]: Using postgres connection "model.mage_case.stg_vendas"
+[0m00:06:50.719071 [debug] [Thread-1 (]: On model.mage_case.stg_clientes: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "node_id": "model.mage_case.stg_clientes"} */
+
+  create view "dbt"."public"."stg_clientes__dbt_tmp"
+    
+    
+  as (
+    
+
+select *
+from read_parquet('s3://mage-bucket/parquet/clientes.parquet')
+  );
+[0m00:06:50.719979 [debug] [Thread-3 (]: Using postgres connection "model.mage_case.stg_produtos"
+[0m00:06:50.721594 [debug] [Thread-4 (]: On model.mage_case.stg_vendas: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "node_id": "model.mage_case.stg_vendas"} */
+
+  create view "dbt"."public"."stg_vendas__dbt_tmp"
+    
+    
+  as (
+    
+
+select *
+from read_parquet('s3://mage-bucket/parquet/vendas.parquet')
+  );
+[0m00:06:50.722206 [debug] [Thread-2 (]: Postgres adapter: Postgres error: function read_parquet(unknown) does not exist
+LINE 10: from read_parquet('s3://mage-bucket/parquet/itens_vendas.par...
+              ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+[0m00:06:50.723594 [debug] [Thread-1 (]: Postgres adapter: Postgres error: function read_parquet(unknown) does not exist
+LINE 10: from read_parquet('s3://mage-bucket/parquet/clientes.parquet...
+              ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+[0m00:06:50.724071 [debug] [Thread-3 (]: On model.mage_case.stg_produtos: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "node_id": "model.mage_case.stg_produtos"} */
+
+  create view "dbt"."public"."stg_produtos__dbt_tmp"
+    
+    
+  as (
+    
+
+select *
+from read_parquet('s3://mage-bucket/parquet/produtos.parquet')
+  );
+[0m00:06:50.725694 [debug] [Thread-2 (]: On model.mage_case.stg_itens_vendas: ROLLBACK
+[0m00:06:50.726315 [debug] [Thread-4 (]: Postgres adapter: Postgres error: function read_parquet(unknown) does not exist
+LINE 10: from read_parquet('s3://mage-bucket/parquet/vendas.parquet')
+              ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+[0m00:06:50.727358 [debug] [Thread-1 (]: On model.mage_case.stg_clientes: ROLLBACK
+[0m00:06:50.728937 [debug] [Thread-3 (]: Postgres adapter: Postgres error: function read_parquet(unknown) does not exist
+LINE 10: from read_parquet('s3://mage-bucket/parquet/produtos.parquet...
+              ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+[0m00:06:50.729852 [debug] [Thread-2 (]: Timing info for model.mage_case.stg_itens_vendas (execute): 00:06:50.626452 => 00:06:50.729567
+[0m00:06:50.730696 [debug] [Thread-4 (]: On model.mage_case.stg_vendas: ROLLBACK
+[0m00:06:50.732074 [debug] [Thread-1 (]: Timing info for model.mage_case.stg_clientes (execute): 00:06:50.668631 => 00:06:50.731787
+[0m00:06:50.732864 [debug] [Thread-3 (]: On model.mage_case.stg_produtos: ROLLBACK
+[0m00:06:50.733903 [debug] [Thread-2 (]: On model.mage_case.stg_itens_vendas: Close
+[0m00:06:50.735349 [debug] [Thread-4 (]: Timing info for model.mage_case.stg_vendas (execute): 00:06:50.675023 => 00:06:50.735062
+[0m00:06:50.735978 [debug] [Thread-1 (]: On model.mage_case.stg_clientes: Close
+[0m00:06:50.737168 [debug] [Thread-3 (]: Timing info for model.mage_case.stg_produtos (execute): 00:06:50.682458 => 00:06:50.736912
+[0m00:06:50.738908 [debug] [Thread-4 (]: On model.mage_case.stg_vendas: Close
+[0m00:06:50.742280 [debug] [Thread-3 (]: On model.mage_case.stg_produtos: Close
+[0m00:06:50.756886 [debug] [Thread-2 (]: Database Error in model stg_itens_vendas (models/stagking/stg_itens_vendas.sql)
+  function read_parquet(unknown) does not exist
+  LINE 10: from read_parquet('s3://mage-bucket/parquet/itens_vendas.par...
+                ^
+  HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+  compiled Code at target/run/mage_case/models/stagking/stg_itens_vendas.sql
+[0m00:06:50.757762 [debug] [Thread-4 (]: Database Error in model stg_vendas (models/stagking/stg_vendas.sql)
+  function read_parquet(unknown) does not exist
+  LINE 10: from read_parquet('s3://mage-bucket/parquet/vendas.parquet')
+                ^
+  HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+  compiled Code at target/run/mage_case/models/stagking/stg_vendas.sql
+[0m00:06:50.758691 [debug] [Thread-3 (]: Database Error in model stg_produtos (models/stagking/stg_produtos.sql)
+  function read_parquet(unknown) does not exist
+  LINE 10: from read_parquet('s3://mage-bucket/parquet/produtos.parquet...
+                ^
+  HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+  compiled Code at target/run/mage_case/models/stagking/stg_produtos.sql
+[0m00:06:50.759560 [debug] [Thread-1 (]: Database Error in model stg_clientes (models/stagking/stg_clientes.sql)
+  function read_parquet(unknown) does not exist
+  LINE 10: from read_parquet('s3://mage-bucket/parquet/clientes.parquet...
+                ^
+  HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+  compiled Code at target/run/mage_case/models/stagking/stg_clientes.sql
+[0m00:06:50.760339 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ed178da1-a528-460f-afe0-a34278a40322', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c7e6561ff40>]}
+[0m00:06:50.761309 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ed178da1-a528-460f-afe0-a34278a40322', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c7e65762140>]}
+[0m00:06:50.762395 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ed178da1-a528-460f-afe0-a34278a40322', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c7e65760f10>]}
+[0m00:06:50.763406 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ed178da1-a528-460f-afe0-a34278a40322', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c7e656464d0>]}
+[0m00:06:50.764580 [error] [Thread-2 (]: 2 of 4 ERROR creating sql view model public.stg_itens_vendas ................... [[31mERROR[0m in 0.19s]
+[0m00:06:50.765858 [error] [Thread-4 (]: 4 of 4 ERROR creating sql view model public.stg_vendas ......................... [[31mERROR[0m in 0.18s]
+[0m00:06:50.767414 [error] [Thread-3 (]: 3 of 4 ERROR creating sql view model public.stg_produtos ....................... [[31mERROR[0m in 0.19s]
+[0m00:06:50.768973 [error] [Thread-1 (]: 1 of 4 ERROR creating sql view model public.stg_clientes ....................... [[31mERROR[0m in 0.20s]
+[0m00:06:50.770582 [debug] [Thread-2 (]: Finished running node model.mage_case.stg_itens_vendas
+[0m00:06:50.772127 [debug] [Thread-4 (]: Finished running node model.mage_case.stg_vendas
+[0m00:06:50.773910 [debug] [Thread-3 (]: Finished running node model.mage_case.stg_produtos
+[0m00:06:50.775574 [debug] [Thread-1 (]: Finished running node model.mage_case.stg_clientes
+[0m00:06:50.782826 [debug] [MainThread]: Using postgres connection "master"
+[0m00:06:50.784447 [debug] [MainThread]: On master: BEGIN
+[0m00:06:50.785636 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m00:06:50.799588 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m00:06:50.801087 [debug] [MainThread]: On master: COMMIT
+[0m00:06:50.802315 [debug] [MainThread]: Using postgres connection "master"
+[0m00:06:50.803697 [debug] [MainThread]: On master: COMMIT
+[0m00:06:50.805349 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m00:06:50.806974 [debug] [MainThread]: On master: Close
+[0m00:06:50.808783 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:06:50.811147 [debug] [MainThread]: Connection 'model.mage_case.stg_clientes' was properly closed.
+[0m00:06:50.812768 [debug] [MainThread]: Connection 'model.mage_case.stg_itens_vendas' was properly closed.
+[0m00:06:50.813950 [debug] [MainThread]: Connection 'model.mage_case.stg_produtos' was properly closed.
+[0m00:06:50.815107 [debug] [MainThread]: Connection 'model.mage_case.stg_vendas' was properly closed.
+[0m00:06:50.816067 [info ] [MainThread]: 
+[0m00:06:50.817646 [info ] [MainThread]: Finished running 4 view models in 0 hours 0 minutes and 0.41 seconds (0.41s).
+[0m00:06:50.820306 [debug] [MainThread]: Command end result
+[0m00:06:50.847981 [info ] [MainThread]: 
+[0m00:06:50.849745 [info ] [MainThread]: [31mCompleted with 4 errors and 0 warnings:[0m
+[0m00:06:50.852393 [info ] [MainThread]: 
+[0m00:06:50.855222 [error] [MainThread]:   Database Error in model stg_itens_vendas (models/stagking/stg_itens_vendas.sql)
+  function read_parquet(unknown) does not exist
+  LINE 10: from read_parquet('s3://mage-bucket/parquet/itens_vendas.par...
+                ^
+  HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+  compiled Code at target/run/mage_case/models/stagking/stg_itens_vendas.sql
+[0m00:06:50.858422 [info ] [MainThread]: 
+[0m00:06:50.860932 [error] [MainThread]:   Database Error in model stg_vendas (models/stagking/stg_vendas.sql)
+  function read_parquet(unknown) does not exist
+  LINE 10: from read_parquet('s3://mage-bucket/parquet/vendas.parquet')
+                ^
+  HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+  compiled Code at target/run/mage_case/models/stagking/stg_vendas.sql
+[0m00:06:50.862988 [info ] [MainThread]: 
+[0m00:06:50.864903 [error] [MainThread]:   Database Error in model stg_produtos (models/stagking/stg_produtos.sql)
+  function read_parquet(unknown) does not exist
+  LINE 10: from read_parquet('s3://mage-bucket/parquet/produtos.parquet...
+                ^
+  HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+  compiled Code at target/run/mage_case/models/stagking/stg_produtos.sql
+[0m00:06:50.867472 [info ] [MainThread]: 
+[0m00:06:50.869935 [error] [MainThread]:   Database Error in model stg_clientes (models/stagking/stg_clientes.sql)
+  function read_parquet(unknown) does not exist
+  LINE 10: from read_parquet('s3://mage-bucket/parquet/clientes.parquet...
+                ^
+  HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+  compiled Code at target/run/mage_case/models/stagking/stg_clientes.sql
+[0m00:06:50.871977 [info ] [MainThread]: 
+[0m00:06:50.874170 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=4 SKIP=0 TOTAL=4
+[0m00:06:50.878129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c7e68bcf310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c7e65727df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7c7e65727f70>]}
+[0m00:06:50.880366 [debug] [MainThread]: Flushing usage events
+[0m00:08:03.399149 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e2378cfb730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e23793882b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e2379388310>]}
+
+
+============================== 00:08:03.405291 | 5dbb8dae-b6b6-492a-aea6-ec98ead936dc ==============================
+[0m00:08:03.405291 [info ] [MainThread]: Running with dbt=1.7.9
+[0m00:08:03.406448 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/usr/app/logs', 'profiles_dir': '/usr/app', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'invocation_command': 'dbt run', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m00:08:03.610990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5dbb8dae-b6b6-492a-aea6-ec98ead936dc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e23771aed10>]}
+[0m00:08:03.712500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5dbb8dae-b6b6-492a-aea6-ec98ead936dc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e2377467f70>]}
+[0m00:08:03.714487 [info ] [MainThread]: Registered adapter: postgres=1.7.9
+[0m00:08:03.730529 [debug] [MainThread]: checksum: 6ff0d83c3b46f350064523b4e08d9241403ad71d606ba49c4e670afba3668b39, vars: {}, profile: , target: , version: 1.7.9
+[0m00:08:03.882726 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 4 files changed.
+[0m00:08:03.883941 [debug] [MainThread]: Partial parsing: updated file: mage_case://models/stagking/stg_produtos.sql
+[0m00:08:03.884915 [debug] [MainThread]: Partial parsing: updated file: mage_case://models/stagking/stg_clientes.sql
+[0m00:08:03.885804 [debug] [MainThread]: Partial parsing: updated file: mage_case://models/stagking/stg_itens_vendas.sql
+[0m00:08:03.886759 [debug] [MainThread]: Partial parsing: updated file: mage_case://models/stagking/stg_vendas.sql
+[0m00:08:04.089632 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.mage_case.staging
+- models.mage_case.data_mart
+[0m00:08:04.100237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5dbb8dae-b6b6-492a-aea6-ec98ead936dc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e23744080d0>]}
+[0m00:08:04.137012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5dbb8dae-b6b6-492a-aea6-ec98ead936dc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e23755e8c40>]}
+[0m00:08:04.138709 [info ] [MainThread]: Found 4 models, 0 sources, 0 exposures, 0 metrics, 401 macros, 0 groups, 0 semantic models
+[0m00:08:04.140370 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5dbb8dae-b6b6-492a-aea6-ec98ead936dc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e23755e8eb0>]}
+[0m00:08:04.144663 [info ] [MainThread]: 
+[0m00:08:04.147384 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m00:08:04.151408 [debug] [ThreadPool]: Acquiring new postgres connection 'list_dbt'
+[0m00:08:04.172898 [debug] [ThreadPool]: Using postgres connection "list_dbt"
+[0m00:08:04.174433 [debug] [ThreadPool]: On list_dbt: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "connection_name": "list_dbt"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m00:08:04.175468 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:08:04.190019 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.0 seconds
+[0m00:08:04.192589 [debug] [ThreadPool]: On list_dbt: Close
+[0m00:08:04.196911 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dbt, now list_dbt_public)
+[0m00:08:04.207256 [debug] [ThreadPool]: Using postgres connection "list_dbt_public"
+[0m00:08:04.208485 [debug] [ThreadPool]: On list_dbt_public: BEGIN
+[0m00:08:04.209577 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m00:08:04.222586 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m00:08:04.223852 [debug] [ThreadPool]: Using postgres connection "list_dbt_public"
+[0m00:08:04.254023 [debug] [ThreadPool]: On list_dbt_public: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "connection_name": "list_dbt_public"} */
+select
+      'dbt' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'dbt' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'dbt' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m00:08:04.278967 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.0 seconds
+[0m00:08:04.282240 [debug] [ThreadPool]: On list_dbt_public: ROLLBACK
+[0m00:08:04.292841 [debug] [ThreadPool]: On list_dbt_public: Close
+[0m00:08:04.302245 [debug] [MainThread]: Using postgres connection "master"
+[0m00:08:04.303595 [debug] [MainThread]: On master: BEGIN
+[0m00:08:04.304799 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:08:04.317031 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m00:08:04.318143 [debug] [MainThread]: Using postgres connection "master"
+[0m00:08:04.319233 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m00:08:04.324864 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m00:08:04.327115 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '5dbb8dae-b6b6-492a-aea6-ec98ead936dc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e23755e80a0>]}
+[0m00:08:04.328226 [debug] [MainThread]: On master: ROLLBACK
+[0m00:08:04.329474 [debug] [MainThread]: Using postgres connection "master"
+[0m00:08:04.331175 [debug] [MainThread]: On master: BEGIN
+[0m00:08:04.333401 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m00:08:04.335060 [debug] [MainThread]: On master: COMMIT
+[0m00:08:04.336384 [debug] [MainThread]: Using postgres connection "master"
+[0m00:08:04.337688 [debug] [MainThread]: On master: COMMIT
+[0m00:08:04.338841 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m00:08:04.339678 [debug] [MainThread]: On master: Close
+[0m00:08:04.341091 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m00:08:04.342330 [info ] [MainThread]: 
+[0m00:08:04.355874 [debug] [Thread-1 (]: Began running node model.mage_case.stg_clientes
+[0m00:08:04.357627 [debug] [Thread-2 (]: Began running node model.mage_case.stg_itens_vendas
+[0m00:08:04.358358 [debug] [Thread-3 (]: Began running node model.mage_case.stg_produtos
+[0m00:08:04.359247 [debug] [Thread-4 (]: Began running node model.mage_case.stg_vendas
+[0m00:08:04.360454 [info ] [Thread-1 (]: 1 of 4 START sql view model public.stg_clientes ................................ [RUN]
+[0m00:08:04.362162 [info ] [Thread-2 (]: 2 of 4 START sql view model public.stg_itens_vendas ............................ [RUN]
+[0m00:08:04.364331 [info ] [Thread-3 (]: 3 of 4 START sql view model public.stg_produtos ................................ [RUN]
+[0m00:08:04.367087 [info ] [Thread-4 (]: 4 of 4 START sql view model public.stg_vendas .................................. [RUN]
+[0m00:08:04.369384 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dbt_public, now model.mage_case.stg_clientes)
+[0m00:08:04.371928 [debug] [Thread-2 (]: Acquiring new postgres connection 'model.mage_case.stg_itens_vendas'
+[0m00:08:04.375170 [debug] [Thread-3 (]: Acquiring new postgres connection 'model.mage_case.stg_produtos'
+[0m00:08:04.377572 [debug] [Thread-4 (]: Acquiring new postgres connection 'model.mage_case.stg_vendas'
+[0m00:08:04.379801 [debug] [Thread-1 (]: Began compiling node model.mage_case.stg_clientes
+[0m00:08:04.381792 [debug] [Thread-2 (]: Began compiling node model.mage_case.stg_itens_vendas
+[0m00:08:04.383660 [debug] [Thread-3 (]: Began compiling node model.mage_case.stg_produtos
+[0m00:08:04.385768 [debug] [Thread-4 (]: Began compiling node model.mage_case.stg_vendas
+[0m00:08:04.398766 [debug] [Thread-1 (]: Writing injected SQL for node "model.mage_case.stg_clientes"
+[0m00:08:04.404619 [debug] [Thread-2 (]: Writing injected SQL for node "model.mage_case.stg_itens_vendas"
+[0m00:08:04.410167 [debug] [Thread-3 (]: Writing injected SQL for node "model.mage_case.stg_produtos"
+[0m00:08:04.414789 [debug] [Thread-4 (]: Writing injected SQL for node "model.mage_case.stg_vendas"
+[0m00:08:04.422149 [debug] [Thread-1 (]: Timing info for model.mage_case.stg_clientes (compile): 00:08:04.387804 => 00:08:04.421633
+[0m00:08:04.423516 [debug] [Thread-2 (]: Timing info for model.mage_case.stg_itens_vendas (compile): 00:08:04.400501 => 00:08:04.423083
+[0m00:08:04.424777 [debug] [Thread-1 (]: Began executing node model.mage_case.stg_clientes
+[0m00:08:04.425921 [debug] [Thread-3 (]: Timing info for model.mage_case.stg_produtos (compile): 00:08:04.406168 => 00:08:04.425399
+[0m00:08:04.427062 [debug] [Thread-4 (]: Timing info for model.mage_case.stg_vendas (compile): 00:08:04.411357 => 00:08:04.426518
+[0m00:08:04.428520 [debug] [Thread-2 (]: Began executing node model.mage_case.stg_itens_vendas
+[0m00:08:04.453802 [debug] [Thread-3 (]: Began executing node model.mage_case.stg_produtos
+[0m00:08:04.480961 [debug] [Thread-4 (]: Began executing node model.mage_case.stg_vendas
+[0m00:08:04.483166 [debug] [Thread-1 (]: Writing runtime sql for node "model.mage_case.stg_clientes"
+[0m00:08:04.490796 [debug] [Thread-2 (]: Writing runtime sql for node "model.mage_case.stg_itens_vendas"
+[0m00:08:04.497594 [debug] [Thread-3 (]: Writing runtime sql for node "model.mage_case.stg_produtos"
+[0m00:08:04.504047 [debug] [Thread-4 (]: Writing runtime sql for node "model.mage_case.stg_vendas"
+[0m00:08:04.510171 [debug] [Thread-1 (]: Using postgres connection "model.mage_case.stg_clientes"
+[0m00:08:04.511142 [debug] [Thread-3 (]: Using postgres connection "model.mage_case.stg_produtos"
+[0m00:08:04.512883 [debug] [Thread-1 (]: On model.mage_case.stg_clientes: BEGIN
+[0m00:08:04.513845 [debug] [Thread-2 (]: Using postgres connection "model.mage_case.stg_itens_vendas"
+[0m00:08:04.515057 [debug] [Thread-4 (]: Using postgres connection "model.mage_case.stg_vendas"
+[0m00:08:04.515892 [debug] [Thread-3 (]: On model.mage_case.stg_produtos: BEGIN
+[0m00:08:04.519196 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:08:04.521242 [debug] [Thread-2 (]: On model.mage_case.stg_itens_vendas: BEGIN
+[0m00:08:04.523126 [debug] [Thread-4 (]: On model.mage_case.stg_vendas: BEGIN
+[0m00:08:04.525161 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m00:08:04.528362 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m00:08:04.530647 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m00:08:04.538829 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m00:08:04.540362 [debug] [Thread-1 (]: Using postgres connection "model.mage_case.stg_clientes"
+[0m00:08:04.542619 [debug] [Thread-1 (]: On model.mage_case.stg_clientes: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "node_id": "model.mage_case.stg_clientes"} */
+
+  create view "dbt"."public"."stg_clientes__dbt_tmp"
+    
+    
+  as (
+    
+
+select *
+from clientes
+  );
+[0m00:08:04.546638 [debug] [Thread-2 (]: SQL status: BEGIN in 0.0 seconds
+[0m00:08:04.547577 [debug] [Thread-3 (]: SQL status: BEGIN in 0.0 seconds
+[0m00:08:04.548675 [debug] [Thread-4 (]: SQL status: BEGIN in 0.0 seconds
+[0m00:08:04.549647 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m00:08:04.550679 [debug] [Thread-2 (]: Using postgres connection "model.mage_case.stg_itens_vendas"
+[0m00:08:04.552418 [debug] [Thread-3 (]: Using postgres connection "model.mage_case.stg_produtos"
+[0m00:08:04.554379 [debug] [Thread-4 (]: Using postgres connection "model.mage_case.stg_vendas"
+[0m00:08:04.565046 [debug] [Thread-1 (]: Using postgres connection "model.mage_case.stg_clientes"
+[0m00:08:04.566728 [debug] [Thread-2 (]: On model.mage_case.stg_itens_vendas: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "node_id": "model.mage_case.stg_itens_vendas"} */
+
+  create view "dbt"."public"."stg_itens_vendas__dbt_tmp"
+    
+    
+  as (
+    
+
+select *
+from itens_vendas
+  );
+[0m00:08:04.568228 [debug] [Thread-3 (]: On model.mage_case.stg_produtos: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "node_id": "model.mage_case.stg_produtos"} */
+
+  create view "dbt"."public"."stg_produtos__dbt_tmp"
+    
+    
+  as (
+    
+
+select *
+from produtos
+  );
+[0m00:08:04.569748 [debug] [Thread-4 (]: On model.mage_case.stg_vendas: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "node_id": "model.mage_case.stg_vendas"} */
+
+  create view "dbt"."public"."stg_vendas__dbt_tmp"
+    
+    
+  as (
+    
+
+select *
+from vendas
+  );
+[0m00:08:04.571339 [debug] [Thread-1 (]: On model.mage_case.stg_clientes: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "node_id": "model.mage_case.stg_clientes"} */
+alter table "dbt"."public"."stg_clientes__dbt_tmp" rename to "stg_clientes"
+[0m00:08:04.575366 [debug] [Thread-2 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m00:08:04.576136 [debug] [Thread-3 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m00:08:04.576674 [debug] [Thread-4 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m00:08:04.578438 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m00:08:04.583213 [debug] [Thread-2 (]: Using postgres connection "model.mage_case.stg_itens_vendas"
+[0m00:08:04.650092 [debug] [Thread-3 (]: Using postgres connection "model.mage_case.stg_produtos"
+[0m00:08:04.658402 [debug] [Thread-4 (]: Using postgres connection "model.mage_case.stg_vendas"
+[0m00:08:04.682390 [debug] [Thread-2 (]: On model.mage_case.stg_itens_vendas: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "node_id": "model.mage_case.stg_itens_vendas"} */
+alter table "dbt"."public"."stg_itens_vendas__dbt_tmp" rename to "stg_itens_vendas"
+[0m00:08:04.683553 [debug] [Thread-1 (]: On model.mage_case.stg_clientes: COMMIT
+[0m00:08:04.685939 [debug] [Thread-3 (]: On model.mage_case.stg_produtos: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "node_id": "model.mage_case.stg_produtos"} */
+alter table "dbt"."public"."stg_produtos__dbt_tmp" rename to "stg_produtos"
+[0m00:08:04.688250 [debug] [Thread-4 (]: On model.mage_case.stg_vendas: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "node_id": "model.mage_case.stg_vendas"} */
+alter table "dbt"."public"."stg_vendas__dbt_tmp" rename to "stg_vendas"
+[0m00:08:04.691317 [debug] [Thread-2 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m00:08:04.692148 [debug] [Thread-1 (]: Using postgres connection "model.mage_case.stg_clientes"
+[0m00:08:04.694321 [debug] [Thread-3 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m00:08:04.695588 [debug] [Thread-4 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m00:08:04.698455 [debug] [Thread-2 (]: On model.mage_case.stg_itens_vendas: COMMIT
+[0m00:08:04.699851 [debug] [Thread-1 (]: On model.mage_case.stg_clientes: COMMIT
+[0m00:08:04.702659 [debug] [Thread-3 (]: On model.mage_case.stg_produtos: COMMIT
+[0m00:08:04.705404 [debug] [Thread-4 (]: On model.mage_case.stg_vendas: COMMIT
+[0m00:08:04.706942 [debug] [Thread-2 (]: Using postgres connection "model.mage_case.stg_itens_vendas"
+[0m00:08:04.708930 [debug] [Thread-3 (]: Using postgres connection "model.mage_case.stg_produtos"
+[0m00:08:04.709534 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m00:08:04.710389 [debug] [Thread-4 (]: Using postgres connection "model.mage_case.stg_vendas"
+[0m00:08:04.711500 [debug] [Thread-2 (]: On model.mage_case.stg_itens_vendas: COMMIT
+[0m00:08:04.713133 [debug] [Thread-3 (]: On model.mage_case.stg_produtos: COMMIT
+[0m00:08:04.722960 [debug] [Thread-1 (]: Applying DROP to: "dbt"."public"."stg_clientes__dbt_backup"
+[0m00:08:04.724190 [debug] [Thread-4 (]: On model.mage_case.stg_vendas: COMMIT
+[0m00:08:04.726559 [debug] [Thread-2 (]: SQL status: COMMIT in 0.0 seconds
+[0m00:08:04.728121 [debug] [Thread-3 (]: SQL status: COMMIT in 0.0 seconds
+[0m00:08:04.734781 [debug] [Thread-1 (]: Using postgres connection "model.mage_case.stg_clientes"
+[0m00:08:04.740419 [debug] [Thread-2 (]: Applying DROP to: "dbt"."public"."stg_itens_vendas__dbt_backup"
+[0m00:08:04.741175 [debug] [Thread-4 (]: SQL status: COMMIT in 0.0 seconds
+[0m00:08:04.744861 [debug] [Thread-3 (]: Applying DROP to: "dbt"."public"."stg_produtos__dbt_backup"
+[0m00:08:04.746172 [debug] [Thread-1 (]: On model.mage_case.stg_clientes: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "node_id": "model.mage_case.stg_clientes"} */
+drop view if exists "dbt"."public"."stg_clientes__dbt_backup" cascade
+[0m00:08:04.748842 [debug] [Thread-2 (]: Using postgres connection "model.mage_case.stg_itens_vendas"
+[0m00:08:04.753843 [debug] [Thread-4 (]: Applying DROP to: "dbt"."public"."stg_vendas__dbt_backup"
+[0m00:08:04.756202 [debug] [Thread-3 (]: Using postgres connection "model.mage_case.stg_produtos"
+[0m00:08:04.757914 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m00:08:04.758686 [debug] [Thread-2 (]: On model.mage_case.stg_itens_vendas: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "node_id": "model.mage_case.stg_itens_vendas"} */
+drop view if exists "dbt"."public"."stg_itens_vendas__dbt_backup" cascade
+[0m00:08:04.760694 [debug] [Thread-4 (]: Using postgres connection "model.mage_case.stg_vendas"
+[0m00:08:04.761952 [debug] [Thread-3 (]: On model.mage_case.stg_produtos: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "node_id": "model.mage_case.stg_produtos"} */
+drop view if exists "dbt"."public"."stg_produtos__dbt_backup" cascade
+[0m00:08:04.764362 [debug] [Thread-1 (]: Timing info for model.mage_case.stg_clientes (execute): 00:08:04.429897 => 00:08:04.764095
+[0m00:08:04.765832 [debug] [Thread-2 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m00:08:04.766504 [debug] [Thread-4 (]: On model.mage_case.stg_vendas: /* {"app": "dbt", "dbt_version": "1.7.9", "profile_name": "postgres_profile", "target_name": "dev", "node_id": "model.mage_case.stg_vendas"} */
+drop view if exists "dbt"."public"."stg_vendas__dbt_backup" cascade
+[0m00:08:04.768516 [debug] [Thread-3 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m00:08:04.769603 [debug] [Thread-1 (]: On model.mage_case.stg_clientes: Close
+[0m00:08:04.772637 [debug] [Thread-2 (]: Timing info for model.mage_case.stg_itens_vendas (execute): 00:08:04.484378 => 00:08:04.772335
+[0m00:08:04.774563 [debug] [Thread-4 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m00:08:04.776811 [debug] [Thread-3 (]: Timing info for model.mage_case.stg_produtos (execute): 00:08:04.491680 => 00:08:04.776491
+[0m00:08:04.778482 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5dbb8dae-b6b6-492a-aea6-ec98ead936dc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e2374457e50>]}
+[0m00:08:04.779422 [debug] [Thread-2 (]: On model.mage_case.stg_itens_vendas: Close
+[0m00:08:04.782318 [debug] [Thread-4 (]: Timing info for model.mage_case.stg_vendas (execute): 00:08:04.498501 => 00:08:04.782009
+[0m00:08:04.783563 [debug] [Thread-3 (]: On model.mage_case.stg_produtos: Close
+[0m00:08:04.784981 [info ] [Thread-1 (]: 1 of 4 OK created sql view model public.stg_clientes ........................... [[32mCREATE VIEW[0m in 0.41s]
+[0m00:08:04.786928 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5dbb8dae-b6b6-492a-aea6-ec98ead936dc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e2374329210>]}
+[0m00:08:04.788318 [debug] [Thread-4 (]: On model.mage_case.stg_vendas: Close
+[0m00:08:04.790424 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5dbb8dae-b6b6-492a-aea6-ec98ead936dc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e23742d7700>]}
+[0m00:08:04.791669 [debug] [Thread-1 (]: Finished running node model.mage_case.stg_clientes
+[0m00:08:04.792966 [info ] [Thread-2 (]: 2 of 4 OK created sql view model public.stg_itens_vendas ....................... [[32mCREATE VIEW[0m in 0.42s]
+[0m00:08:04.795795 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '5dbb8dae-b6b6-492a-aea6-ec98ead936dc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e23742d7970>]}
+[0m00:08:04.798036 [info ] [Thread-3 (]: 3 of 4 OK created sql view model public.stg_produtos ........................... [[32mCREATE VIEW[0m in 0.42s]
+[0m00:08:04.801938 [debug] [Thread-2 (]: Finished running node model.mage_case.stg_itens_vendas
+[0m00:08:04.804616 [info ] [Thread-4 (]: 4 of 4 OK created sql view model public.stg_vendas ............................. [[32mCREATE VIEW[0m in 0.42s]
+[0m00:08:04.806557 [debug] [Thread-3 (]: Finished running node model.mage_case.stg_produtos
+[0m00:08:04.809867 [debug] [Thread-4 (]: Finished running node model.mage_case.stg_vendas
+[0m00:08:04.814545 [debug] [MainThread]: Using postgres connection "master"
+[0m00:08:04.815522 [debug] [MainThread]: On master: BEGIN
+[0m00:08:04.817013 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m00:08:04.827944 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m00:08:04.829021 [debug] [MainThread]: On master: COMMIT
+[0m00:08:04.830285 [debug] [MainThread]: Using postgres connection "master"
+[0m00:08:04.831371 [debug] [MainThread]: On master: COMMIT
+[0m00:08:04.832937 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m00:08:04.833823 [debug] [MainThread]: On master: Close
+[0m00:08:04.835017 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:08:04.835787 [debug] [MainThread]: Connection 'model.mage_case.stg_clientes' was properly closed.
+[0m00:08:04.836853 [debug] [MainThread]: Connection 'model.mage_case.stg_itens_vendas' was properly closed.
+[0m00:08:04.838299 [debug] [MainThread]: Connection 'model.mage_case.stg_produtos' was properly closed.
+[0m00:08:04.839257 [debug] [MainThread]: Connection 'model.mage_case.stg_vendas' was properly closed.
+[0m00:08:04.840217 [info ] [MainThread]: 
+[0m00:08:04.841344 [info ] [MainThread]: Finished running 4 view models in 0 hours 0 minutes and 0.69 seconds (0.69s).
+[0m00:08:04.843736 [debug] [MainThread]: Command end result
+[0m00:08:04.867919 [info ] [MainThread]: 
+[0m00:08:04.869586 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m00:08:04.871449 [info ] [MainThread]: 
+[0m00:08:04.873975 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m00:08:04.876883 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e2378cfb730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e237570b8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e237570b610>]}
+[0m00:08:04.879135 [debug] [MainThread]: Flushing usage events

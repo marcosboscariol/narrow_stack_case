@@ -1,0 +1,57 @@
+if 'transformer' not in globals():
+    from mage_ai.data_preparation.decorators import transformer
+if 'test' not in globals():
+    from mage_ai.data_preparation.decorators import test
+
+import os
+import pandas as pd
+from sqlalchemy import create_engine
+
+@transformer
+def transform(data, *args, **kwargs):
+    # Configurações MinIO (S3)
+    minio_endpoint = os.getenv('MINIO_ENDPOINT', 'http://minio:9000')
+    minio_access_key = os.getenv('MINIO_ACCESS_KEY', 'minioadmin')
+    minio_secret_key = os.getenv('MINIO_SECRET_KEY', 'minioadmin')
+    bucket = 'mage-bucket'
+
+    # Configurações Postgres
+    postgres_user = os.getenv('POSTGRES_USER', 'postgres')
+    postgres_password = os.getenv('POSTGRES_PASSWORD', 'postgres')
+    postgres_host = os.getenv('POSTGRES_HOST', 'postgres')
+    postgres_port = os.getenv('POSTGRES_PORT', '5432')
+    postgres_db = os.getenv('POSTGRES_DB', 'dbt')
+
+    # Cria conexão SQLAlchemy
+    engine = create_engine(
+        f"postgresql://{postgres_user}:{postgres_password}@{postgres_host}:{postgres_port}/{postgres_db}"
+    )
+
+    arquivos = [
+        'clientes.parquet',
+        'itens_vendas.parquet',
+        'produtos.parquet',
+        'vendas.parquet',
+    ]
+
+    storage_options = {
+        'key': minio_access_key,
+        'secret': minio_secret_key,
+        'client_kwargs': {'endpoint_url': minio_endpoint},
+    }
+
+    for arquivo in arquivos:
+        path_s3 = f"s3://{bucket}/parquet/{arquivo}"
+        print(f"Lendo {path_s3} ...")
+        df = pd.read_parquet(path_s3, storage_options=storage_options)
+
+        tabela = arquivo.replace('.parquet', '')
+        print(f"Inserindo dados na tabela {tabela} ...")
+        df.to_sql(tabela, engine, if_exists='replace', index=False)
+
+    print("Carga finalizada com sucesso.")
+    return None
+
+@test
+def test_output(output=None, *args) -> None:
+    assert output is None, 
