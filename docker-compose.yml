@@ -14,8 +14,8 @@ services:
       - AWS_SECRET_ACCESS_KEY=minioadmin
       - S3_ENDPOINT_URL=http://minio:9000
       - S3_BUCKET=mage-bucket
-      - POSTGRES_HOST=postgres      # ← adiciona isto
-      - POSTGRES_USER=postgres      # opcional, só para centralizar
+      - POSTGRES_HOST=postgres
+      - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=dbt
       - POSTGRES_PORT=5432
@@ -74,5 +74,5 @@ services:
 
 volumes:
   pgdata:
-  metabase_data:  # <- você pode remover esse volume se quiser, já que agora usa Postgres
+  metabase_data:
   minio_data:
