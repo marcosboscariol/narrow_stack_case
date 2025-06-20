@@ -29,8 +29,8 @@ Ensure the following tools are installed:
 First, clone this repository:
 
 ```bash
-git clone https://https://github.com/marcosboscariol/narrow_stack_case
-cd your-repo-name
+git clone https://github.com/marcosboscariol/narrow_stack_case
+cd narrow_stack_case
 ```
 
 The project should have the following structure:
@@ -52,7 +52,7 @@ The project should have the following structure:
 
 ### 3. Running the Project with Docker
 
-Follow these steps to start the entire stack using Docker:
+Wait for all containers to be fully up and running before proceeding. Then, follow these steps to start the entire stack using Docker:
 
 ```bash
 docker compose up -d
@@ -111,8 +111,20 @@ After running the dbt transformations, you can verify that everything worked as 
 - Check stg and data_mart tables:
 
 ```bash
-docker exec -it postgres psql -U postgres -d dbt -c "\dt stg.*"
-docker exec -it postgres psql -U postgres -d dbt -c "\dt data_mart.*"
+docker exec -it postgres psql -U postgres -d dbt -c \dt
+```
+Verify it you have these tables:
+
+```plain
+Schema |      Name       | Type  |  Owner
+--------+-----------------+-------+----------
+ public | clientes        | table | postgres
+ public | dm_dim_cliente  | table | postgres
+ public | dm_dim_produtos | table | postgres
+ public | dm_fact_vendas  | table | postgres
+ public | itens_vendas    | table | postgres
+ public | produtos        | table | postgres
+ public | vendas          | table | postgres
 ```
 
 - Query transformed data:
